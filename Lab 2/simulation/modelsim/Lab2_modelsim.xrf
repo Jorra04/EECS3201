@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab2.v
-source_file = 1, C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/db/Lab2.cbx.xml
+source_file = 1, C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2.v
+source_file = 1, C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/db/Lab2.cbx.xml
 design_name = Lab2
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Lab2, 1
 instance = comp, \outputBus[0]~output , outputBus[0]~output, Lab2, 1
