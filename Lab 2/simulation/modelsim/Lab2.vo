@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition"
 
-// DATE "10/08/2021 20:20:51"
+// DATE "10/10/2021 15:03:09"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -300,8 +300,8 @@ defparam \outputBus~2 .sum_lutc_input = "datac";
 // Location: LCCOMB_X59_Y53_N6
 fiftyfivenm_lcell_comb \outputBus~3 (
 // Equation(s):
-// \outputBus~3_combout  = (\inputBus[0]~input_o  & (\inputBus[1]~input_o  $ ((!\inputBus[2]~input_o )))) # (!\inputBus[0]~input_o  & ((\inputBus[1]~input_o  & (!\inputBus[2]~input_o  & \inputBus[3]~input_o )) # (!\inputBus[1]~input_o  & 
-// (\inputBus[2]~input_o  & !\inputBus[3]~input_o ))))
+// \outputBus~3_combout  = (\inputBus[1]~input_o  & ((\inputBus[0]~input_o  & (\inputBus[2]~input_o )) # (!\inputBus[0]~input_o  & (!\inputBus[2]~input_o  & \inputBus[3]~input_o )))) # (!\inputBus[1]~input_o  & (!\inputBus[3]~input_o  & (\inputBus[0]~input_o 
+//  $ (\inputBus[2]~input_o ))))
 
 	.dataa(\inputBus[1]~input_o ),
 	.datab(\inputBus[0]~input_o ),
@@ -311,7 +311,7 @@ fiftyfivenm_lcell_comb \outputBus~3 (
 	.combout(\outputBus~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \outputBus~3 .lut_mask = 16'h8694;
+defparam \outputBus~3 .lut_mask = 16'h8294;
 defparam \outputBus~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 

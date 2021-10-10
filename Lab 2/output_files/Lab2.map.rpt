@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2
-Fri Oct 08 20:20:37 2021
+Sun Oct 10 15:02:56 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 08 20:20:37 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 10 15:02:56 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab2                                                      ;
 ; Top-level Entity Name              ; Lab2                                                      ;
@@ -260,18 +260,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Fri Oct 08 20:20:31 2021
+    Info: Processing started: Sun Oct 10 15:02:49 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab2.v
     Info (12023): Found entity 1: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file lab2a.v
-    Info (12023): Found entity 1: Lab2a File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2a.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Lab2a.v(5): created implicit net for "a" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2a.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at Lab2a.v(6): created implicit net for "b" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2a.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at Lab2a.v(7): created implicit net for "c" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2a.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at Lab2a.v(8): created implicit net for "d" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 2/Lab2a.v Line: 8
 Info (12127): Elaborating entity "Lab2" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -280,10 +274,10 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4770 megabytes
-    Info: Processing ended: Fri Oct 08 20:20:37 2021
-    Info: Elapsed time: 00:00:06
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Sun Oct 10 15:02:56 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
 
 

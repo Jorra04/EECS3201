@@ -28,7 +28,6 @@ module Lab2(inputBus, outputBus);
 	assign outputBus[3] = (~inputBus[3] & ~inputBus[2] & ~inputBus[1] & inputBus[0])  |
 								 (~inputBus[3] & inputBus[2] & ~inputBus[1] & ~inputBus[0])  |
 								 (~inputBus[3] & inputBus[2] & inputBus[1] & inputBus[0])    |
-								 (inputBus[3] & ~inputBus[2] & ~inputBus[1] & inputBus[0])   |
 								 (inputBus[3] & ~inputBus[2] & inputBus[1] & ~inputBus[0])   |
 								 (inputBus[3] & inputBus[2] & inputBus[1] & inputBus[0]);     
 							

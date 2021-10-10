@@ -29,12 +29,12 @@ inputBus[3] => outputBus.IN1
 inputBus[3] => outputBus.IN1
 inputBus[3] => outputBus.IN1
 inputBus[3] => outputBus.IN1
-outputBus[0] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[1] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[2] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[3] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[4] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[5] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
-outputBus[6] << outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[0] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[1] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[2] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[3] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[4] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[5] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[6] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
 
 
