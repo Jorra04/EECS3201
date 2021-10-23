@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outputBus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inputBus2[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

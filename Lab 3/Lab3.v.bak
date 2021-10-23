@@ -1,0 +1,7 @@
+module Lab3(inputBus, outputBus);
+	
+	input[3:0] inputBus;
+	output[3:0] outputBus;
+	
+	
+endmodule
