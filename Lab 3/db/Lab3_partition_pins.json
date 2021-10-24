@@ -64,6 +64,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "outputBus3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[2]",
+					"strict" : false
+				},
+				{
 					"name" : "outputBus3[3]",
 					"strict" : false
 				},
@@ -73,6 +81,10 @@
 				},
 				{
 					"name" : "outputBus3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus3[6]",
 					"strict" : false
 				},
 				{

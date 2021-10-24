@@ -1,28 +1,20 @@
 module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, s);
 	
-	input[3:0] inputBus;
-	input[3:0] inputBus2;
+	input[3:0] inputBus, inputBus2;
 	input s;
 	
-	output[6:0] outputBus;
-	output[6:0] outputBus2;
+	output[6:0] outputBus, outputBus2, outputBus3;
 	
 	Lab2 hex1(inputBus, outputBus);
 	Lab2 hex2(inputBus2, outputBus2);
 	
-	wire[3:0] sum;
+	wire[3:0] S;
 	wire carryOut;
 	
-	wire[3:0] x;
-	wire[3:0] y;
-	assign x = inputBus;
-	assign y = inputBus2;
+
+	adder4 adder(0, inputBus, inputBus2, S, carryOut);
 	
-	fullAdder adder(0, x, y, sum, carryOut);
-	
-	output[6:0] outputBus3;
-	
-	Lab2 hex3(sum, outputBus3);
+	Lab2 hex3(S, outputBus3);
 	
 	
 endmodule
