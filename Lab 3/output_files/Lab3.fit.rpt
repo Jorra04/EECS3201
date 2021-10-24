@@ -1,5 +1,5 @@
 Fitter report for Lab3
-Sat Oct 23 21:06:26 2021
+Sun Oct 24 13:12:50 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -10,33 +10,34 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Incremental Compilation Preservation Summary
-  6. Incremental Compilation Partition Settings
-  7. Incremental Compilation Placement Preservation
-  8. Pin-Out File
-  9. Fitter Resource Usage Summary
- 10. Fitter Partition Statistics
- 11. Input Pins
- 12. Output Pins
- 13. Dual Purpose and Dedicated Pins
- 14. I/O Bank Usage
- 15. All Package Pins
- 16. I/O Assignment Warnings
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Routing Usage Summary
- 21. LAB Logic Elements
- 22. LAB Signals Sourced
- 23. LAB Signals Sourced Out
- 24. LAB Distinct Inputs
- 25. I/O Rules Summary
- 26. I/O Rules Details
- 27. I/O Rules Matrix
- 28. Fitter Device Options
- 29. Operating Settings and Conditions
- 30. Fitter Messages
- 31. Fitter Suppressed Messages
+  5. Ignored Assignments
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. Dual Purpose and Dedicated Pins
+ 15. I/O Bank Usage
+ 16. All Package Pins
+ 17. I/O Assignment Warnings
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Routing Usage Summary
+ 22. LAB Logic Elements
+ 23. LAB Signals Sourced
+ 24. LAB Signals Sourced Out
+ 25. LAB Distinct Inputs
+ 26. I/O Rules Summary
+ 27. I/O Rules Details
+ 28. I/O Rules Matrix
+ 29. Fitter Device Options
+ 30. Operating Settings and Conditions
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
 
 
 
@@ -63,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Oct 23 21:06:26 2021                     ;
+; Fitter Status                      ; Successful - Sun Oct 24 13:12:50 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                                      ;
 ; Top-level Entity Name              ; Lab3                                                      ;
@@ -156,6 +157,21 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-12        ;   0.4%      ;
 +----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                       ;
++----------+----------------+--------------+---------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To    ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+---------------+---------------+----------------+
+; Location ;                ;              ; outputBus4[0] ; PIN_C18       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[1] ; PIN_D18       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[2] ; PIN_E18       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[3] ; PIN_B16       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[4] ; PIN_A17       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[5] ; PIN_A18       ; QSF Assignment ;
+; Location ;                ;              ; outputBus4[6] ; PIN_B17       ; QSF Assignment ;
++----------+----------------+--------------+---------------+---------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1365,6 +1381,14 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "outputBus4[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "outputBus4[6]" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
@@ -1385,10 +1409,11 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/output_files/Lab3.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+Info: Quartus Prime Fitter was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 6209 megabytes
-    Info: Processing ended: Sat Oct 23 21:06:27 2021
+    Info: Processing ended: Sun Oct 24 13:12:51 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:09
 

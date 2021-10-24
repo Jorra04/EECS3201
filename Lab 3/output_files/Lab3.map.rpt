@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Sat Oct 23 21:06:20 2021
+Sun Oct 24 13:12:44 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 23 21:06:20 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 24 13:12:44 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                                      ;
 ; Top-level Entity Name              ; Lab3                                                      ;
@@ -283,19 +283,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sat Oct 23 21:06:14 2021
+    Info: Processing started: Sun Oct 24 13:12:38 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 4 design units, including 4 entities, in source file lab3.v
     Info (12023): Found entity 1: Lab3 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 1
-    Info (12023): Found entity 2: fullAdder File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 24
-    Info (12023): Found entity 3: adder4 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 35
-    Info (12023): Found entity 4: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 52
+    Info (12023): Found entity 2: fullAdder File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 35
+    Info (12023): Found entity 3: adder4 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 46
+    Info (12023): Found entity 4: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 63
 Info (12127): Elaborating entity "Lab3" for the top level hierarchy
 Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 8
-Info (12128): Elaborating entity "adder4" for hierarchy "adder4:adder" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 15
-Info (12128): Elaborating entity "fullAdder" for hierarchy "adder4:adder|fullAdder:stage0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 43
+Info (12128): Elaborating entity "adder4" for hierarchy "adder4:adder" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 14
+Info (12128): Elaborating entity "fullAdder" for hierarchy "adder4:adder|fullAdder:stage0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 54
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/output_files/Lab3.map.smsg
@@ -309,7 +309,7 @@ Info (21057): Implemented 57 device resources after synthesis - the final resour
     Info (21061): Implemented 27 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Sat Oct 23 21:06:20 2021
+    Info: Processing ended: Sun Oct 24 13:12:44 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 

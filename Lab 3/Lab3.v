@@ -11,8 +11,19 @@ module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, s);
 	wire[3:0] S;
 	wire carryOut;
 	
-
 	adder4 adder(0, inputBus, inputBus2, S, carryOut);
+//	integer i;
+//	reg[3:0] overFlowIndicator;
+//	always @(s or carryOut)
+//	begin
+//		if(!s && carryOut)
+//			outputBus4 <= 
+//		else
+//			i <= 2;
+//	end
+
+	
+	
 	
 	Lab2 hex3(S, outputBus3);
 	
