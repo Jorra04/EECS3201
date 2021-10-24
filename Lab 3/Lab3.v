@@ -1,9 +1,9 @@
-module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, s);
+module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, s);
 	
 	input[3:0] inputBus, inputBus2;
 	input s;
 	
-	output[6:0] outputBus, outputBus2, outputBus3;
+	output[6:0] outputBus, outputBus2, outputBus3, outputBus4;
 	
 	Lab2 hex1(inputBus, outputBus);
 	Lab2 hex2(inputBus2, outputBus2);
@@ -12,18 +12,17 @@ module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, s);
 	wire carryOut;
 	
 	adder4 adder(0, inputBus, inputBus2, S, carryOut);
-//	integer i;
-//	reg[3:0] overFlowIndicator;
+
+	reg[3:0] overFlowIndicator;
+
 //	always @(s or carryOut)
 //	begin
 //		if(!s && carryOut)
-//			outputBus4 <= 
-//		else
-//			i <= 2;
+//			assign outputBus4[6] = 1'b0;
 //	end
 
 	
-	
+//	Lab2 hex4(overFlowIndicator, outputBus4);
 	
 	Lab2 hex3(S, outputBus3);
 	

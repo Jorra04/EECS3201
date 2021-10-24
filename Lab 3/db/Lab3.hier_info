@@ -28,6 +28,13 @@ outputBus3[3] <= Lab2:hex3.port1
 outputBus3[4] <= Lab2:hex3.port1
 outputBus3[5] <= Lab2:hex3.port1
 outputBus3[6] <= Lab2:hex3.port1
+outputBus4[0] <= <VCC>
+outputBus4[1] <= <VCC>
+outputBus4[2] <= <VCC>
+outputBus4[3] <= <VCC>
+outputBus4[4] <= <VCC>
+outputBus4[5] <= <VCC>
+outputBus4[6] <= <VCC>
 s => ~NO_FANOUT~
 
 

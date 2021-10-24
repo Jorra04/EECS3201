@@ -86,8 +86,8 @@ inputBus[0]                  : A13       : input  : 2.5 V             :         
 inputBus[1]                  : A14       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
+outputBus4[4]                : A17       : output : 2.5 V             :         : 7         : Y              
+outputBus4[5]                : A18       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 6         :                
@@ -151,8 +151,8 @@ inputBus2[3]                 : B12       : input  : 2.5 V             :         
 GND                          : B13       : gnd    :                   :         :           :                
 inputBus[2]                  : B14       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B17       :        :                   :         : 7         :                
+outputBus4[3]                : B16       : output : 2.5 V             :         : 7         : Y              
+outputBus4[6]                : B17       : output : 2.5 V             :         : 7         : Y              
 GND                          : B18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B20       :        :                   :         : 6         :                
@@ -175,7 +175,7 @@ outputBus3[0]                : C14       : output : 2.5 V             :         
 outputBus3[2]                : C15       : output : 2.5 V             :         : 7         : Y              
 outputBus3[3]                : C16       : output : 2.5 V             :         : 7         : Y              
 outputBus3[6]                : C17       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
+outputBus4[0]                : C18       : output : 2.5 V             :         : 7         : Y              
 outputBus2[3]                : C19       : output : 2.5 V             :         : 7         : Y              
 outputBus2[4]                : C20       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 6         :                
@@ -197,7 +197,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7         :                
 GND                          : D16       : gnd    :                   :         :           :                
 outputBus3[5]                : D17       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 6         :                
+outputBus4[1]                : D18       : output : 2.5 V             :         : 6         : Y              
 outputBus2[5]                : D19       : output : 2.5 V             :         : 6         : Y              
 GND                          : D20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 6         :                
@@ -219,7 +219,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :      
 outputBus3[1]                : E15       : output : 2.5 V             :         : 7         : Y              
 outputBus3[4]                : E16       : output : 2.5 V             :         : 7         : Y              
 outputBus2[6]                : E17       : output : 2.5 V             :         : 6         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
+outputBus4[2]                : E18       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E20       :        :                   :         : 6         :                
 outputBus2[2]                : E21       : output : 2.5 V             :         : 6         : Y              

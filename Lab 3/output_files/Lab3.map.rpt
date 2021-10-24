@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Sun Oct 24 13:12:44 2021
+Sun Oct 24 14:28:36 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 24 13:12:44 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 24 14:28:36 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                                      ;
 ; Top-level Entity Name              ; Lab3                                                      ;
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 27                                                        ;
 ;     Dedicated logic registers      ; 0                                                         ;
 ; Total registers                    ; 0                                                         ;
-; Total pins                         ; 30                                                        ;
+; Total pins                         ; 37                                                        ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0                                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                                         ;
@@ -196,14 +196,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 0                 ;
 ;     -- I/O registers                        ; 0                 ;
 ;                                             ;                   ;
-; I/O pins                                    ; 30                ;
+; I/O pins                                    ; 37                ;
 ;                                             ;                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; inputBus[0]~input ;
 ; Maximum fan-out                             ; 10                ;
-; Total fan-out                               ; 154               ;
-; Average fan-out                             ; 1.77              ;
+; Total fan-out                               ; 161               ;
+; Average fan-out                             ; 1.59              ;
 +---------------------------------------------+-------------------+
 
 
@@ -212,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+-------------+--------------+
-; |Lab3                      ; 27 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |Lab3                               ; Lab3        ; work         ;
+; |Lab3                      ; 27 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 37   ; 0            ; 0          ; |Lab3                               ; Lab3        ; work         ;
 ;    |Lab2:hex1|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab3|Lab2:hex1                     ; Lab2        ; work         ;
 ;    |Lab2:hex2|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab3|Lab2:hex2                     ; Lab2        ; work         ;
 ;    |Lab2:hex3|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab3|Lab2:hex3                     ; Lab2        ; work         ;
@@ -256,15 +256,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 30                          ;
-; cycloneiii_lcell_comb ; 27                          ;
-;     normal            ; 27                          ;
+; boundary_port         ; 37                          ;
+; cycloneiii_lcell_comb ; 28                          ;
+;     normal            ; 28                          ;
+;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.51                        ;
+; Average LUT depth     ; 2.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -283,33 +284,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Oct 24 13:12:38 2021
+    Info: Processing started: Sun Oct 24 14:28:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 4 design units, including 4 entities, in source file lab3.v
     Info (12023): Found entity 1: Lab3 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 1
-    Info (12023): Found entity 2: fullAdder File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 35
-    Info (12023): Found entity 3: adder4 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 46
-    Info (12023): Found entity 4: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 63
+    Info (12023): Found entity 2: fullAdder File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 42
+    Info (12023): Found entity 3: adder4 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 53
+    Info (12023): Found entity 4: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 70
 Info (12127): Elaborating entity "Lab3" for the top level hierarchy
 Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 8
 Info (12128): Elaborating entity "adder4" for hierarchy "adder4:adder" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 14
-Info (12128): Elaborating entity "fullAdder" for hierarchy "adder4:adder|fullAdder:stage0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 54
+Info (12128): Elaborating entity "fullAdder" for hierarchy "adder4:adder|fullAdder:stage0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 61
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "outputBus4[0]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[1]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[2]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[3]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[4]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[5]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
+    Warning (13410): Pin "outputBus4[6]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/output_files/Lab3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "s" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v Line: 4
-Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 21 output pins
+    Info (21059): Implemented 28 output pins
     Info (21061): Implemented 27 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Sun Oct 24 13:12:44 2021
+    Info: Processing ended: Sun Oct 24 14:28:36 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 

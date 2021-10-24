@@ -1,5 +1,5 @@
 Fitter report for Lab3
-Sun Oct 24 13:12:50 2021
+Sun Oct 24 14:28:42 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -10,34 +10,33 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Ignored Assignments
-  6. Incremental Compilation Preservation Summary
-  7. Incremental Compilation Partition Settings
-  8. Incremental Compilation Placement Preservation
-  9. Pin-Out File
- 10. Fitter Resource Usage Summary
- 11. Fitter Partition Statistics
- 12. Input Pins
- 13. Output Pins
- 14. Dual Purpose and Dedicated Pins
- 15. I/O Bank Usage
- 16. All Package Pins
- 17. I/O Assignment Warnings
- 18. Fitter Resource Utilization by Entity
- 19. Delay Chain Summary
- 20. Pad To Core Delay Chain Fanout
- 21. Routing Usage Summary
- 22. LAB Logic Elements
- 23. LAB Signals Sourced
- 24. LAB Signals Sourced Out
- 25. LAB Distinct Inputs
- 26. I/O Rules Summary
- 27. I/O Rules Details
- 28. I/O Rules Matrix
- 29. Fitter Device Options
- 30. Operating Settings and Conditions
- 31. Fitter Messages
- 32. Fitter Suppressed Messages
+  5. Incremental Compilation Preservation Summary
+  6. Incremental Compilation Partition Settings
+  7. Incremental Compilation Placement Preservation
+  8. Pin-Out File
+  9. Fitter Resource Usage Summary
+ 10. Fitter Partition Statistics
+ 11. Input Pins
+ 12. Output Pins
+ 13. Dual Purpose and Dedicated Pins
+ 14. I/O Bank Usage
+ 15. All Package Pins
+ 16. I/O Assignment Warnings
+ 17. Fitter Resource Utilization by Entity
+ 18. Delay Chain Summary
+ 19. Pad To Core Delay Chain Fanout
+ 20. Routing Usage Summary
+ 21. LAB Logic Elements
+ 22. LAB Signals Sourced
+ 23. LAB Signals Sourced Out
+ 24. LAB Distinct Inputs
+ 25. I/O Rules Summary
+ 26. I/O Rules Details
+ 27. I/O Rules Matrix
+ 28. Fitter Device Options
+ 29. Operating Settings and Conditions
+ 30. Fitter Messages
+ 31. Fitter Suppressed Messages
 
 
 
@@ -64,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 24 13:12:50 2021                     ;
+; Fitter Status                      ; Successful - Sun Oct 24 14:28:42 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab3                                                      ;
 ; Top-level Entity Name              ; Lab3                                                      ;
@@ -75,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 28 / 49,760 ( < 1 % )                                     ;
 ;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                                        ;
 ; Total registers                    ; 0                                                         ;
-; Total pins                         ; 30 / 360 ( 8 % )                                          ;
+; Total pins                         ; 37 / 360 ( 10 % )                                         ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                           ;
@@ -155,23 +154,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.4%      ;
+;     Processors 2-12        ;   0.3%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------+
-; Ignored Assignments                                                                       ;
-+----------+----------------+--------------+---------------+---------------+----------------+
-; Name     ; Ignored Entity ; Ignored From ; Ignored To    ; Ignored Value ; Ignored Source ;
-+----------+----------------+--------------+---------------+---------------+----------------+
-; Location ;                ;              ; outputBus4[0] ; PIN_C18       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[1] ; PIN_D18       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[2] ; PIN_E18       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[3] ; PIN_B16       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[4] ; PIN_A17       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[5] ; PIN_A18       ; QSF Assignment ;
-; Location ;                ;              ; outputBus4[6] ; PIN_B17       ; QSF Assignment ;
-+----------+----------------+--------------+---------------+---------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -180,8 +164,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 107 ) ; 0.00 % ( 0 / 107 )         ; 0.00 % ( 0 / 107 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 107 ) ; 0.00 % ( 0 / 107 )         ; 0.00 % ( 0 / 107 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 121 ) ; 0.00 % ( 0 / 121 )         ; 0.00 % ( 0 / 121 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 121 ) ; 0.00 % ( 0 / 121 )         ; 0.00 % ( 0 / 121 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -204,7 +188,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 91 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 105 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -241,7 +225,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 4 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 30 / 360 ( 8 % )      ;
+; I/O pins                                    ; 37 / 360 ( 10 % )     ;
 ;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
@@ -259,12 +243,12 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; Remote update blocks                        ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 0.9% / 0.9% / 0.9%    ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%    ;
+; Peak interconnect usage (total/H/V)         ; 0.7% / 0.7% / 0.8%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 165                   ;
-; Average fan-out                             ; 1.54                  ;
+; Total fan-out                               ; 172                   ;
+; Average fan-out                             ; 1.42                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -299,7 +283,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; Total LABs:  partially or completely used   ; 4 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 30                   ; 0                              ;
+; I/O pins                                    ; 37                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )      ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -313,7 +297,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 171                  ; 8                              ;
+;     -- Total Connections                    ; 178                  ; 8                              ;
 ;     -- Registered Connections               ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -322,7 +306,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
 ;     -- Input Ports                          ; 9                    ; 0                              ;
-;     -- Output Ports                         ; 21                   ; 0                              ;
+;     -- Output Ports                         ; 28                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Registered Ports                            ;                      ;                                ;
@@ -377,6 +361,13 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; outputBus3[4] ; E16   ; 7        ; 74           ; 54           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; outputBus3[5] ; D17   ; 7        ; 74           ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; outputBus3[6] ; C17   ; 7        ; 74           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[0] ; C18   ; 7        ; 69           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[1] ; D18   ; 6        ; 78           ; 49           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[2] ; E18   ; 6        ; 78           ; 49           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[3] ; B16   ; 7        ; 60           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[4] ; A17   ; 7        ; 64           ; 54           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[5] ; A18   ; 7        ; 66           ; 54           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; outputBus4[6] ; B17   ; 7        ; 69           ; 54           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; outputBus[0]  ; J20   ; 6        ; 78           ; 45           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; outputBus[1]  ; K20   ; 6        ; 78           ; 42           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; outputBus[2]  ; L18   ; 6        ; 78           ; 37           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -414,8 +405,8 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; 3        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
-; 6        ; 13 / 60 ( 22 % ) ; 2.5V          ; --           ;
-; 7        ; 17 / 52 ( 33 % ) ; 2.5V          ; --           ;
+; 6        ; 15 / 60 ( 25 % ) ; 2.5V          ; --           ;
+; 7        ; 22 / 52 ( 42 % ) ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )  ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -441,8 +432,8 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; A14      ; 425        ; 7        ; inputBus[1]                                    ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A15      ; 421        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ; 419        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A17      ; 407        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A18      ; 405        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A17      ; 407        ; 7        ; outputBus4[4]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A18      ; 405        ; 7        ; outputBus4[5]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A19      ; 403        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A20      ; 401        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A21      ; 371        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -506,8 +497,8 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B14      ; 427        ; 7        ; inputBus[2]                                    ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B15      ; 423        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
-; B16      ; 417        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B17      ; 402        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; B16      ; 417        ; 7        ; outputBus4[3]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B17      ; 402        ; 7        ; outputBus4[6]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B18      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B19      ; 399        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B20      ; 369        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -530,7 +521,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; C15      ; 418        ; 7        ; outputBus3[2]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C16      ; 416        ; 7        ; outputBus3[3]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C17      ; 391        ; 7        ; outputBus3[6]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; C18      ; 400        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; C18      ; 400        ; 7        ; outputBus4[0]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C19      ; 397        ; 7        ; outputBus2[3]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C20      ; 357        ; 6        ; outputBus2[4]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; C21      ; 347        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -552,7 +543,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; D15      ; 404        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D16      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D17      ; 389        ; 7        ; outputBus3[5]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; D18      ; 385        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; D18      ; 385        ; 6        ; outputBus4[1]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; D19      ; 359        ; 6        ; outputBus2[5]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; D20      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D21      ; 345        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -574,7 +565,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; E15      ; 390        ; 7        ; outputBus3[1]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E16      ; 388        ; 7        ; outputBus3[4]                                  ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E17      ; 366        ; 6        ; outputBus2[6]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; E18      ; 387        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; E18      ; 387        ; 6        ; outputBus4[2]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; E19      ; 352        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E20      ; 355        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E21      ; 335        ; 6        ; outputBus2[2]                                  ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -939,6 +930,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; outputBus3[4] ; Incomplete set of assignments ;
 ; outputBus3[5] ; Incomplete set of assignments ;
 ; outputBus3[6] ; Incomplete set of assignments ;
+; outputBus4[0] ; Incomplete set of assignments ;
+; outputBus4[1] ; Incomplete set of assignments ;
+; outputBus4[2] ; Incomplete set of assignments ;
+; outputBus4[3] ; Incomplete set of assignments ;
+; outputBus4[4] ; Incomplete set of assignments ;
+; outputBus4[5] ; Incomplete set of assignments ;
+; outputBus4[6] ; Incomplete set of assignments ;
 ; s             ; Incomplete set of assignments ;
 ; inputBus[0]   ; Incomplete set of assignments ;
 ; inputBus[3]   ; Incomplete set of assignments ;
@@ -956,7 +954,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------+-------------+--------------+
-; |Lab3                      ; 28 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 30   ; 0            ; 28 (1)       ; 0 (0)             ; 0 (0)            ; 0          ; |Lab3                               ; Lab3        ; work         ;
+; |Lab3                      ; 28 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 37   ; 0            ; 28 (1)       ; 0 (0)             ; 0 (0)            ; 0          ; |Lab3                               ; Lab3        ; work         ;
 ;    |Lab2:hex1|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Lab3|Lab2:hex1                     ; Lab2        ; work         ;
 ;    |Lab2:hex2|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Lab3|Lab2:hex2                     ; Lab2        ; work         ;
 ;    |Lab2:hex3|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Lab3|Lab2:hex3                     ; Lab2        ; work         ;
@@ -995,11 +993,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; outputBus3[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; outputBus3[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; outputBus3[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; outputBus4[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; s             ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; inputBus[0]   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; inputBus[0]   ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; inputBus[3]   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; inputBus[2]   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; inputBus[1]   ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; inputBus[2]   ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; inputBus[1]   ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; inputBus2[0]  ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; inputBus2[3]  ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; inputBus2[2]  ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
@@ -1014,16 +1019,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+---------+
 ; s                                           ;                   ;         ;
 ; inputBus[0]                                 ;                   ;         ;
-;      - Lab2:hex1|outputBus[0]~0             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[1]~1             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[2]~2             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[3]~3             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[4]~4             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[5]~5             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[6]~6             ; 0                 ; 6       ;
-;      - adder4:adder|fullAdder:stage0|s~0    ; 0                 ; 6       ;
-;      - adder4:adder|fullAdder:stage1|Cout~0 ; 0                 ; 6       ;
-;      - adder4:adder|fullAdder:stage1|s~0    ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[0]~0             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[1]~1             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[2]~2             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[3]~3             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[4]~4             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[5]~5             ; 1                 ; 6       ;
+;      - Lab2:hex1|outputBus[6]~6             ; 1                 ; 6       ;
+;      - adder4:adder|fullAdder:stage0|s~0    ; 1                 ; 6       ;
+;      - adder4:adder|fullAdder:stage1|Cout~0 ; 1                 ; 6       ;
+;      - adder4:adder|fullAdder:stage1|s~0    ; 1                 ; 6       ;
 ; inputBus[3]                                 ;                   ;         ;
 ;      - Lab2:hex1|outputBus[0]~0             ; 0                 ; 6       ;
 ;      - Lab2:hex1|outputBus[1]~1             ; 0                 ; 6       ;
@@ -1034,16 +1039,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Lab2:hex1|outputBus[6]~6             ; 0                 ; 6       ;
 ;      - adder4:adder|fullAdder:stage3|s~0    ; 0                 ; 6       ;
 ; inputBus[2]                                 ;                   ;         ;
-;      - Lab2:hex1|outputBus[0]~0             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[1]~1             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[2]~2             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[3]~3             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[4]~4             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[5]~5             ; 0                 ; 6       ;
-;      - Lab2:hex1|outputBus[6]~6             ; 0                 ; 6       ;
-;      - adder4:adder|fullAdder:stage3|s~0    ; 0                 ; 6       ;
-;      - adder4:adder|fullAdder:stage2|s~0    ; 0                 ; 6       ;
-; inputBus[1]                                 ;                   ;         ;
 ;      - Lab2:hex1|outputBus[0]~0             ; 1                 ; 6       ;
 ;      - Lab2:hex1|outputBus[1]~1             ; 1                 ; 6       ;
 ;      - Lab2:hex1|outputBus[2]~2             ; 1                 ; 6       ;
@@ -1051,8 +1046,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Lab2:hex1|outputBus[4]~4             ; 1                 ; 6       ;
 ;      - Lab2:hex1|outputBus[5]~5             ; 1                 ; 6       ;
 ;      - Lab2:hex1|outputBus[6]~6             ; 1                 ; 6       ;
-;      - adder4:adder|fullAdder:stage1|Cout~0 ; 1                 ; 6       ;
-;      - adder4:adder|fullAdder:stage1|s~0    ; 1                 ; 6       ;
+;      - adder4:adder|fullAdder:stage3|s~0    ; 1                 ; 6       ;
+;      - adder4:adder|fullAdder:stage2|s~0    ; 1                 ; 6       ;
+; inputBus[1]                                 ;                   ;         ;
+;      - Lab2:hex1|outputBus[0]~0             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[1]~1             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[2]~2             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[3]~3             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[4]~4             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[5]~5             ; 0                 ; 6       ;
+;      - Lab2:hex1|outputBus[6]~6             ; 0                 ; 6       ;
+;      - adder4:adder|fullAdder:stage1|Cout~0 ; 0                 ; 6       ;
+;      - adder4:adder|fullAdder:stage1|s~0    ; 0                 ; 6       ;
 ; inputBus2[0]                                ;                   ;         ;
 ;      - Lab2:hex2|outputBus[0]~0             ; 0                 ; 6       ;
 ;      - Lab2:hex2|outputBus[1]~1             ; 0                 ; 6       ;
@@ -1101,15 +1106,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 41 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 10 / 5,382 ( < 1 % )   ;
-; C4 interconnects      ; 55 / 106,704 ( < 1 % ) ;
-; Direct links          ; 2 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 42 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 12 / 5,382 ( < 1 % )   ;
+; C4 interconnects      ; 43 / 106,704 ( < 1 % ) ;
+; Direct links          ; 6 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
-; Local interconnects   ; 6 / 49,760 ( < 1 % )   ;
+; Local interconnects   ; 5 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 12 / 5,406 ( < 1 % )   ;
-; R4 interconnects      ; 27 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 11 / 5,406 ( < 1 % )   ;
+; R4 interconnects      ; 25 / 147,764 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -1121,8 +1126,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                          ; 1                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
-; 4                                          ; 1                           ;
-; 5                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 1                           ;
 ; 8                                          ; 0                           ;
@@ -1132,8 +1137,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                         ; 0                           ;
 ; 13                                         ; 0                           ;
 ; 14                                         ; 0                           ;
-; 15                                         ; 0                           ;
-; 16                                         ; 1                           ;
+; 15                                         ; 1                           ;
+; 16                                         ; 0                           ;
 +--------------------------------------------+-----------------------------+
 
 
@@ -1146,8 +1151,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                           ; 1                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
-; 5                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 1                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 1                           ;
 ; 8                                           ; 0                           ;
@@ -1157,8 +1162,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
+; 15                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1171,8 +1175,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
-; 4                                               ; 1                           ;
-; 5                                               ; 0                           ;
+; 4                                               ; 0                           ;
+; 5                                               ; 1                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 1                           ;
 ; 8                                               ; 0                           ;
@@ -1180,8 +1184,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                              ; 0                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 1                           ;
+; 13                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
@@ -1259,9 +1262,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 30        ; 0            ; 30        ; 0            ; 0            ; 30        ; 30        ; 0            ; 30        ; 30        ; 0            ; 21           ; 0            ; 0            ; 9            ; 0            ; 21           ; 9            ; 0            ; 0            ; 0            ; 21           ; 0            ; 0            ; 0            ; 0            ; 0            ; 30        ; 0            ; 0            ;
+; Total Pass         ; 37        ; 0            ; 37        ; 0            ; 0            ; 37        ; 37        ; 0            ; 37        ; 37        ; 0            ; 28           ; 0            ; 0            ; 9            ; 0            ; 28           ; 9            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 37        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 30           ; 0         ; 30           ; 30           ; 0         ; 0         ; 30           ; 0         ; 0         ; 30           ; 9            ; 30           ; 30           ; 21           ; 30           ; 9            ; 21           ; 30           ; 30           ; 30           ; 9            ; 30           ; 30           ; 30           ; 30           ; 30           ; 0         ; 30           ; 30           ;
+; Total Inapplicable ; 0         ; 37           ; 0         ; 37           ; 37           ; 0         ; 0         ; 37           ; 0         ; 0         ; 37           ; 9            ; 37           ; 37           ; 28           ; 37           ; 9            ; 28           ; 37           ; 37           ; 37           ; 9            ; 37           ; 37           ; 37           ; 37           ; 37           ; 0         ; 37           ; 37           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; outputBus[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; outputBus[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1284,6 +1287,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; outputBus3[4]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; outputBus3[5]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; outputBus3[6]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[0]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[1]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[2]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[3]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[4]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[5]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; outputBus4[6]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s                  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; inputBus[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; inputBus[3]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1381,14 +1391,6 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Warning (15705): Ignored locations or region assignments to the following nodes
-    Warning (15706): Node "outputBus4[0]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[1]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[2]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[3]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[4]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[5]" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "outputBus4[6]" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
@@ -1409,12 +1411,11 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/output_files/Lab3.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 6209 megabytes
-    Info: Processing ended: Sun Oct 24 13:12:51 2021
-    Info: Elapsed time: 00:00:06
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 6210 megabytes
+    Info: Processing ended: Sun Oct 24 14:28:42 2021
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:09
 
 
