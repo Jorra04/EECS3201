@@ -1,0 +1,158 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/simulation/modelsim
+vadder4
+Z1 !s110 1635456631
+!i10b 1
+!s100 ]dlzD9`@]Vj?STSfX]X_N0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ik@Jk0DmmB6^cF@GDOz_8L1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1635100204
+Z5 8C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v
+Z6 FC:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v
+!i122 0
+L0 45 14
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1635456631.000000
+Z9 !s107 C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3|C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3}
+Z13 tCvgOpt 0
+vfullAdder
+R1
+!i10b 1
+!s100 3a_85GRW:=56`iEE6A]Wc3
+R2
+I0Oa@Z1I>m`HICghfU1Q;J1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 34 9
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+nfull@adder
+vhex2bin
+R1
+!i10b 1
+!s100 X2ZB:Z1F9gW_NkQF8SG@N0
+R2
+I;i3ob=88nD7Gz3YLP]Yaz0
+R3
+R0
+Z14 w1635456621
+Z15 8C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v
+Z16 FC:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v
+!i122 1
+L0 69 28
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v|
+Z17 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3|C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v|
+!i113 1
+R11
+R12
+R13
+vLab2
+R1
+!i10b 1
+!s100 oX^[6a8m;MJWdhLz<[zHn2
+R2
+I]]<4D2D5_PHk]ID9Sz1IF2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 62 54
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@lab2
+vLab3
+R1
+!i10b 1
+!s100 _gM@iE2UYiO;m8Hd_dL_40
+R2
+IGX8N=Q6OQK4kYz;U;1_HQ2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 30
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@lab3
+vlab3_testbench
+R1
+!i10b 1
+!s100 gb`<iGlBEJaIZNSi>24S=1
+R2
+IW?]_Dk@>QBB_^1J7l3bL61
+R3
+R0
+R14
+R15
+R16
+!i122 1
+L0 3 64
+R7
+r1
+!s85 0
+31
+R8
+Z18 !s107 C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v|
+R17
+!i113 1
+R11
+R12
+R13

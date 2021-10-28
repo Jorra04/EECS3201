@@ -1,5 +1,5 @@
 Timing Analyzer report for Lab3
-Sun Oct 24 14:28:48 2021
+Thu Oct 28 19:19:05 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -90,12 +90,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
+; Average used               ; 1.09        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.6%      ;
+;     Processors 2-12        ;   0.8%      ;
 +----------------------------+-------------+
 
 
@@ -277,7 +277,6 @@ No synchronizer chains to report.
 +---------------------+-----------------------+-----------------+-----------------+
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
-; s                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; inputBus[0]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; inputBus[3]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; inputBus[2]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -286,6 +285,7 @@ No synchronizer chains to report.
 ; inputBus2[3]        ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; inputBus2[2]        ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; inputBus2[1]        ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; s                   ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -432,10 +432,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 112   ; 112  ;
-; Unconstrained Output Ports      ; 21    ; 21   ;
-; Unconstrained Output Port Paths ; 112   ; 112  ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 146   ; 146  ;
+; Unconstrained Output Ports      ; 24    ; 24   ;
+; Unconstrained Output Port Paths ; 146   ; 146  ;
 +---------------------------------+-------+------+
 
 
@@ -452,6 +452,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; inputBus[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; inputBus[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; inputBus[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; s            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +--------------+--------------------------------------------------------------------------------------+
 
 
@@ -474,6 +475,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; outputBus3[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus3[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus3[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -497,6 +501,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; inputBus[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; inputBus[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; inputBus[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; s            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +--------------+--------------------------------------------------------------------------------------+
 
 
@@ -519,6 +524,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; outputBus3[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus3[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus3[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; outputBus4[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; outputBus[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -535,7 +543,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Oct 24 14:28:47 2021
+    Info: Processing started: Thu Oct 28 19:19:03 2021
 Info: Command: quartus_sta Lab3 -c Lab3
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -584,9 +592,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4915 megabytes
-    Info: Processing ended: Sun Oct 24 14:28:48 2021
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4919 megabytes
+    Info: Processing ended: Thu Oct 28 19:19:05 2021
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

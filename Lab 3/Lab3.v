@@ -8,29 +8,46 @@ module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, 
 	Lab2 hex1(inputBus, outputBus);
 	Lab2 hex2(inputBus2, outputBus2);
 	
-	wire[3:0] S;
+	wire[3:0] result;
+	reg[3:0] temp, tempResult;
 	wire carryOut;
 	
-	adder4 adder(0, inputBus, inputBus2, S, carryOut);
-
-	reg[3:0] overFlowIndicator;
-
-//	always @(s or carryOut)
-//	begin
-//		if(!s && carryOut)
-//			assign outputBus4[6] = 1'b0;
-//	end
+	adder4 adder(0, inputBus, temp, result, carryOut);
 
 	
-//	Lab2 hex4(overFlowIndicator, outputBus4);
+	//Set outputBus4 to off
+	assign outputBus4[0] = 1'b1;
+	assign outputBus4[1] = ~carryOut || s;
+	assign outputBus4[2] = ~carryOut || s;
+	assign outputBus4[3] = 1'b1;
+	assign outputBus4[4] = 1'b1;
+	assign outputBus4[5] = 1'b1;
+	assign outputBus4[6] = ~((inputBus < inputBus2) && s);
+
 	
-	Lab2 hex3(S, outputBus3);
+	//Handle twos complement conversion
+	always @(*)
+	begin
+		if(s)	
+			temp <= (~inputBus2) + 1;
+		else
+			temp <= inputBus2;
+			
+		if(((inputBus < inputBus2) && s))
+			tempResult <= (~result) + 1;
+		else
+			tempResult <= result;
+	end
+
+
+	
+	Lab2 hex3(tempResult, outputBus3);
 	
 	
 endmodule
 
 
-
+//Full adder from class slides
 module fullAdder(Cin, x, y, s, Cout);
 	
 	input Cin, x, y;

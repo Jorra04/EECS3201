@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# do Lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Jorra/Documents/Coding\ Practice/School/EECS3201/Lab\ 3 {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:30:31 on Oct 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3" C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/Lab3.v 
+# -- Compiling module Lab3
+# -- Compiling module fullAdder
+# -- Compiling module adder4
+# -- Compiling module Lab2
+# 
+# Top level modules:
+# 	Lab3
+# End time: 17:30:31 on Oct 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Jorra/Documents/Coding\ Practice/School/EECS3201/Lab\ 3 {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:30:31 on Oct 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3" C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v 
+# -- Compiling module lab3_testbench
+# -- Compiling module hex2bin
+# 
+# Top level modules:
+# 	lab3_testbench
+# End time: 17:30:31 on Oct 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  lab3_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" lab3_testbench 
+# Start time: 17:30:32 on Oct 28,2021
+# Loading work.lab3_testbench
+# ** Error: (vsim-3033) Instantiation of 'lab3' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /lab3_testbench File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/lab3_testbench.v Line: 14
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/fiftyfivenm
+#             C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/simulation/modelsim/rtl_work
+#             C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 3/simulation/modelsim/rtl_work
+# Loading work.hex2bin
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Lab3_run_msim_rtl_verilog.do PAUSED at line 12
+# End time: 17:31:19 on Oct 28,2021, Elapsed time: 0:00:47
+# Errors: 1, Warnings: 0

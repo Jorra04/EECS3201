@@ -88,6 +88,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "outputBus4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outputBus4[6]",
+					"strict" : false
+				},
+				{
 					"name" : "inputBus[0]",
 					"strict" : false
 				},
@@ -117,6 +129,10 @@
 				},
 				{
 					"name" : "inputBus2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s",
 					"strict" : false
 				}
 			]
