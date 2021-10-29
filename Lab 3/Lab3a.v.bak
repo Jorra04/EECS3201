@@ -1,4 +1,4 @@
-module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, s);
+module Lab3a(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, s);
 	
 	input[3:0] inputBus, inputBus2;
 	input s;
@@ -15,10 +15,7 @@ module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, 
 	adder4 adder(0, inputBus, temp, result, carryOut);
 
 	
-	/*
-	OutputBus4 represents the overflow/sign. creating 1 represents positive
-	overflow. Creating '-' means negative result.
-	*/
+	//Set outputBus4 to off
 	assign outputBus4[0] = 1'b1;
 	assign outputBus4[1] = ~carryOut || s;
 	assign outputBus4[2] = ~carryOut || s;
@@ -32,14 +29,14 @@ module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, 
 	always @(*)
 	begin
 		if(s)	
-			temp = (~inputBus2) + 1;
+			temp <= (~inputBus2) + 1;
 		else
-			temp = inputBus2;
+			temp <= inputBus2;
 			
 		if(((inputBus < inputBus2) && s))
-			tempResult = (~result) + 1;
+			tempResult <= (~result) + 1;
 		else
-			tempResult = result;
+			tempResult <= result;
 	end
 
 

@@ -98,7 +98,6 @@ set_location_assignment PIN_B16 -to outputBus4[3]
 set_location_assignment PIN_A17 -to outputBus4[4]
 set_location_assignment PIN_A18 -to outputBus4[5]
 set_location_assignment PIN_B17 -to outputBus4[6]
-set_global_assignment -name VERILOG_FILE lab3_testbench.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation

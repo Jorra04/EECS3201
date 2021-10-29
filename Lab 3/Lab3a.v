@@ -1,57 +1,54 @@
-module Lab3(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, s);
+module Lab3a(inputBus, inputBus2, outputBus, outputBus2, outputBus3, outputBus4, s);
 	
 	input[3:0] inputBus, inputBus2;
 	input s;
 	
 	output[6:0] outputBus, outputBus2, outputBus3, outputBus4;
 	
-	Lab2 hex1(inputBus, outputBus);
-	Lab2 hex2(inputBus2, outputBus2);
+	Lab2a hex1(inputBus, outputBus);
+	Lab2a hex2(inputBus2, outputBus2);
 	
 	wire[3:0] result;
 	reg[3:0] temp, tempResult;
 	wire carryOut;
 	
-	adder4 adder(0, inputBus, temp, result, carryOut);
+	adder4a adder(0, inputBus, temp, result, carryOut);
 
 	
-	/*
-	OutputBus4 represents the overflow/sign. creating 1 represents positive
-	overflow. Creating '-' means negative result.
-	*/
+	//Set outputBus4 to off
 	assign outputBus4[0] = 1'b1;
 	assign outputBus4[1] = ~carryOut || s;
 	assign outputBus4[2] = ~carryOut || s;
 	assign outputBus4[3] = 1'b1;
 	assign outputBus4[4] = 1'b1;
 	assign outputBus4[5] = 1'b1;
-	assign outputBus4[6] = ~((inputBus < inputBus2) && s);
+	assign outputBus4[6] = ~(~carryOut && s);
 
 	
 	//Handle twos complement conversion
 	always @(*)
 	begin
 		if(s)	
-			temp = (~inputBus2) + 1;
+			temp <= (~inputBus2) + 1;
 		else
-			temp = inputBus2;
+			temp <= inputBus2;
 			
 		if(((inputBus < inputBus2) && s))
-			tempResult = (~result) + 1;
+			tempResult <= (~result) + 1;
 		else
-			tempResult = result;
+			tempResult <= result;
 	end
 
 
 	
-	Lab2 hex3(tempResult, outputBus3);
+	Lab2a hex3(tempResult, outputBus3);
 	
 	
 endmodule
 
 
 //Full adder from class slides
-module fullAdder(Cin, x, y, s, Cout);
+module fullAdder2(Cin, x, y, s, Cout);
 	
 	input Cin, x, y;
 	output s, Cout;
@@ -62,7 +59,7 @@ module fullAdder(Cin, x, y, s, Cout);
 endmodule
 
 
-module adder4(carryIn, X, Y, S, carryOut);
+module adder4a(carryIn, X, Y, S, carryOut);
 
 	input carryIn;
 	input[3:0] X,Y;
@@ -70,16 +67,16 @@ module adder4(carryIn, X, Y, S, carryOut);
 	output carryOut;
 	wire[3:1] C;
 	
-	fullAdder stage0(carryIn, X[0], Y[0], S[0], C[1]);
-	fullAdder stage1(C[1], X[1], Y[1], S[1], C[2]);
-	fullAdder stage2(C[2], X[2], Y[2], S[2], C[3]);
-	fullAdder stage3(C[3], X[3], Y[3], S[3], carryOut);
+	fullAdder2 stage0(carryIn, X[0], Y[0], S[0], C[1]);
+	fullAdder2 stage1(C[1], X[1], Y[1], S[1], C[2]);
+	fullAdder2 stage2(C[2], X[2], Y[2], S[2], C[3]);
+	fullAdder2 stage3(C[3], X[3], Y[3], S[3], carryOut);
 	
 endmodule
 
 
 
-module Lab2(inputBus, outputBus);
+module Lab2a(inputBus, outputBus);
 
 	input [3:0] inputBus;
 	output [6:0] outputBus;
