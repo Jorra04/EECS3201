@@ -1,20 +1,19 @@
-module Lab4(clkin, hexValue, hexValue2, s);
+module Lab4(clkin, s, reset, pause, hexValue, hexValue2);
 	
-	input clkin, s;
+	input clkin, s, reset, pause;
 	wire clkout;
-//	reg[3:0] value = 4'b0100; 
-//	reg[3:0] value2 = 4'b0010;
 
-	reg[3:0] value, value2, origVal1, origVal2;
-
+	reg[3:0] value;
+	reg[3:0] value2;
+	reg[3:0] origVal1, origVal2;
 	output[6:0] hexValue, hexValue2;
+
+	reg paused;
 	
 	ClockDivider wrapper(
 		.cin(clkin),
 		.cout(clkout)
 	);
-	
-	
 	
 	always@(*)
 	begin
@@ -30,29 +29,36 @@ module Lab4(clkin, hexValue, hexValue2, s);
 		end
 	end
 	
-	
-	always @ (posedge clkout)
+
+	always @(posedge pause)
 	begin
-		
-		if(value == 0 && value2 == 0)
+		paused <= ~paused;
+	end
+
+	
+	always @ (posedge clkout or negedge reset)
+	begin
+	
+		if(~reset)
 		begin
 			value <= origVal1;
 			value2 <= origVal2;
 		end
-		else
+	
+		else if(~paused)
 		begin
-			if(value == 0)
+			if(value == 0 && value2 == 0)
+			begin
+			end
+		
+			else if(value == 0)
 			begin
 				value <= 9;
-				value2 <= value2 - 4'b0001;
+				value2 <= value2 - 1;
 			end
 			else
-				value <= value - 4'b0001;
-		
+				value <= value - 1;
 		end
-		
-		
-		
 		
 	end
 	

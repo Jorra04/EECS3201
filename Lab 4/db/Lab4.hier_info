@@ -1,5 +1,16 @@
 |Lab4
 clkin => clkin.IN1
+s => value[2].ADATA
+s => value2[0].ADATA
+reset => value2[0].ALOAD
+reset => value2[1].ALOAD
+reset => value2[2].ALOAD
+reset => value2[3].ALOAD
+reset => value[0].ALOAD
+reset => value[1].ALOAD
+reset => value[2].ALOAD
+reset => value[3].ALOAD
+pause => paused.CLK
 hexValue[0] <= Lab2:hex01.port1
 hexValue[1] <= Lab2:hex01.port1
 hexValue[2] <= Lab2:hex01.port1
@@ -14,8 +25,6 @@ hexValue2[3] <= Lab2:hex02.port1
 hexValue2[4] <= Lab2:hex02.port1
 hexValue2[5] <= Lab2:hex02.port1
 hexValue2[6] <= Lab2:hex02.port1
-s => value.DATAB
-s => value2.DATAB
 
 
 |Lab4|ClockDivider:wrapper

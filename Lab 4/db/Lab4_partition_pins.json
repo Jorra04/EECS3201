@@ -60,7 +60,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
 					"name" : "s",
+					"strict" : false
+				},
+				{
+					"name" : "pause",
 					"strict" : false
 				},
 				{
