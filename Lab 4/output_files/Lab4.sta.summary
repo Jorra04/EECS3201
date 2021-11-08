@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clkin'
+Slack : -4.245
+TNS   : -95.901
+
+Type  : Slow 1200mV 85C Model Setup 'ClockDivider:wrapper|cout'
+Slack : -0.952
+TNS   : -5.419
+
+Type  : Slow 1200mV 85C Model Hold 'ClockDivider:wrapper|cout'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clkin'
+Slack : 0.615
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockDivider:wrapper|cout'
+Slack : -1.403
+TNS   : -9.821
+
+Type  : Slow 1200mV 0C Model Setup 'clkin'
+Slack : -3.882
+TNS   : -86.344
+
+Type  : Slow 1200mV 0C Model Setup 'ClockDivider:wrapper|cout'
+Slack : -0.778
+TNS   : -4.412
+
+Type  : Slow 1200mV 0C Model Hold 'ClockDivider:wrapper|cout'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkin'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockDivider:wrapper|cout'
+Slack : -1.403
+TNS   : -9.821
+
+Type  : Fast 1200mV 0C Model Setup 'clkin'
+Slack : -1.318
+TNS   : -20.741
+
+Type  : Fast 1200mV 0C Model Setup 'ClockDivider:wrapper|cout'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ClockDivider:wrapper|cout'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkin'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -37.200
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockDivider:wrapper|cout'
+Slack : -1.000
+TNS   : -7.000
+
+------------------------------------------------------------

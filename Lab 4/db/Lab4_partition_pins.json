@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hexValue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hexValue2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s",
+					"strict" : false
+				},
+				{
+					"name" : "clkin",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

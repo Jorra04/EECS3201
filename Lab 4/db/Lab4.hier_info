@@ -1,0 +1,137 @@
+|Lab4
+clkin => clkin.IN1
+hexValue[0] <= Lab2:hex01.port1
+hexValue[1] <= Lab2:hex01.port1
+hexValue[2] <= Lab2:hex01.port1
+hexValue[3] <= Lab2:hex01.port1
+hexValue[4] <= Lab2:hex01.port1
+hexValue[5] <= Lab2:hex01.port1
+hexValue[6] <= Lab2:hex01.port1
+hexValue2[0] <= Lab2:hex02.port1
+hexValue2[1] <= Lab2:hex02.port1
+hexValue2[2] <= Lab2:hex02.port1
+hexValue2[3] <= Lab2:hex02.port1
+hexValue2[4] <= Lab2:hex02.port1
+hexValue2[5] <= Lab2:hex02.port1
+hexValue2[6] <= Lab2:hex02.port1
+s => value.DATAB
+s => value2.DATAB
+
+
+|Lab4|ClockDivider:wrapper
+cin => cout~reg0.CLK
+cin => count[0].CLK
+cin => count[1].CLK
+cin => count[2].CLK
+cin => count[3].CLK
+cin => count[4].CLK
+cin => count[5].CLK
+cin => count[6].CLK
+cin => count[7].CLK
+cin => count[8].CLK
+cin => count[9].CLK
+cin => count[10].CLK
+cin => count[11].CLK
+cin => count[12].CLK
+cin => count[13].CLK
+cin => count[14].CLK
+cin => count[15].CLK
+cin => count[16].CLK
+cin => count[17].CLK
+cin => count[18].CLK
+cin => count[19].CLK
+cin => count[20].CLK
+cin => count[21].CLK
+cin => count[22].CLK
+cin => count[23].CLK
+cin => count[24].CLK
+cin => count[25].CLK
+cin => count[26].CLK
+cin => count[27].CLK
+cin => count[28].CLK
+cin => count[29].CLK
+cin => count[30].CLK
+cin => count[31].CLK
+cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Lab2:hex01
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+outputBus[0] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[1] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[2] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[3] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[4] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[5] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[6] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4|Lab2:hex02
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[0] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[1] => outputBus.IN1
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[2] => outputBus.IN0
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+inputBus[3] => outputBus.IN1
+outputBus[0] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[1] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[2] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[3] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[4] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[5] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+outputBus[6] <= outputBus.DB_MAX_OUTPUT_PORT_TYPE
+
+
