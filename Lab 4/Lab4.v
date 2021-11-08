@@ -7,13 +7,8 @@ module Lab4(clkin, s, reset, pause, hexValue, hexValue2);
 	reg[3:0] value2;
 	reg[3:0] origVal1, origVal2;
 	output[6:0] hexValue, hexValue2;
-
+	reg[31:0] counter;
 	reg paused;
-	
-	ClockDivider wrapper(
-		.cin(clkin),
-		.cout(clkout)
-	);
 	
 	always@(*)
 	begin
@@ -30,34 +25,41 @@ module Lab4(clkin, s, reset, pause, hexValue, hexValue2);
 	end
 	
 
-	always @(posedge pause)
+	always @(negedge pause)
 	begin
 		paused <= ~paused;
 	end
 
 	
-	always @ (posedge clkout or negedge reset)
+	always @ (posedge clkin or negedge reset)
 	begin
 	
 		if(~reset)
 		begin
 			value <= origVal1;
 			value2 <= origVal2;
-		end
-	
+			counter <= 0;
+		end	
 		else if(~paused)
 		begin
-			if(value == 0 && value2 == 0)
+			
+			counter <= counter + 1;
+			
+			if(counter == 50000000)
 			begin
+				counter <= 0;
+				if(!(value == 0 && value2 == 0))
+				begin
+					if(value == 0)
+					begin
+						value <= 9;
+						value2 <= value2 - 1;
+					end
+					else
+						value <= value - 1;
+				end
 			end
-		
-			else if(value == 0)
-			begin
-				value <= 9;
-				value2 <= value2 - 1;
-			end
-			else
-				value <= value - 1;
+
 		end
 		
 	end

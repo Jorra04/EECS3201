@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Mon Nov 08 11:54:31 2021
+Mon Nov 08 16:20:17 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -45,15 +45,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 08 11:54:31 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 08 16:20:17 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab4                                                      ;
 ; Top-level Entity Name              ; Lab4                                                      ;
 ; Family                             ; MAX 10                                                    ;
-; Total logic elements               ; 78                                                        ;
-;     Total combinational functions  ; 78                                                        ;
-;     Dedicated logic registers      ; 42                                                        ;
-; Total registers                    ; 42                                                        ;
+; Total logic elements               ; 93                                                        ;
+;     Total combinational functions  ; 93                                                        ;
+;     Dedicated logic registers      ; 41                                                        ;
+; Total registers                    ; 41                                                        ;
 ; Total pins                         ; 18                                                        ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0                                                         ;
@@ -168,15 +168,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; Lab4.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v         ;         ;
-; ClockDivider.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/ClockDivider.v ;         ;
-; Lab2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab2.v         ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
+; Lab4.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v ;         ;
+; Lab2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab2.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -184,43 +183,42 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 78          ;
+; Estimated Total logic elements              ; 93          ;
 ;                                             ;             ;
-; Total combinational functions               ; 78          ;
+; Total combinational functions               ; 93          ;
 ; Logic element usage by number of LUT inputs ;             ;
 ;     -- 4 input functions                    ; 36          ;
-;     -- 3 input functions                    ; 6           ;
-;     -- <=2 input functions                  ; 36          ;
+;     -- 3 input functions                    ; 8           ;
+;     -- <=2 input functions                  ; 49          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 47          ;
+;     -- normal mode                          ; 62          ;
 ;     -- arithmetic mode                      ; 31          ;
 ;                                             ;             ;
-; Total registers                             ; 42          ;
-;     -- Dedicated logic registers            ; 42          ;
+; Total registers                             ; 41          ;
+;     -- Dedicated logic registers            ; 41          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 18          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; clkin~input ;
-; Maximum fan-out                             ; 33          ;
-; Total fan-out                               ; 388         ;
-; Average fan-out                             ; 2.49        ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 44          ;
+; Total fan-out                               ; 450         ;
+; Average fan-out                             ; 2.65        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name        ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+--------------+--------------+
-; |Lab4                      ; 78 (21)             ; 42 (9)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 18   ; 0            ; 0          ; |Lab4                      ; Lab4         ; work         ;
-;    |ClockDivider:wrapper|  ; 43 (43)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab4|ClockDivider:wrapper ; ClockDivider ; work         ;
-;    |Lab2:hex01|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab4|Lab2:hex01           ; Lab2         ; work         ;
-;    |Lab2:hex02|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab4|Lab2:hex02           ; Lab2         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+--------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |Lab4                      ; 93 (79)             ; 41 (41)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 18   ; 0            ; 0          ; |Lab4               ; Lab4        ; work         ;
+;    |Lab2:hex01|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab4|Lab2:hex01    ; Lab2        ; work         ;
+;    |Lab2:hex02|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Lab4|Lab2:hex02    ; Lab2        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -229,12 +227,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 42    ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 41    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 40    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -244,7 +242,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; value2[1]                              ; 10      ;
+; value2[1]                              ; 11      ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -264,21 +262,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 18                          ;
-; cycloneiii_ff         ; 42                          ;
+; cycloneiii_ff         ; 41                          ;
 ;     CLR               ; 8                           ;
-;     SCLR              ; 32                          ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 78                          ;
+;     ENA CLR           ; 32                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 93                          ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
-;     normal            ; 47                          ;
+;     normal            ; 62                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 6                           ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 36                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.08                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -297,37 +295,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Mon Nov 08 11:54:25 2021
+    Info: Processing started: Mon Nov 08 16:20:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab4.v
     Info (12023): Found entity 1: Lab4 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file clockdivider.v
-    Info (12023): Found entity 1: ClockDivider File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/ClockDivider.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab2.v
     Info (12023): Found entity 1: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab2.v Line: 1
 Info (12127): Elaborating entity "Lab4" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Lab4.v(57): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 57
-Warning (10230): Verilog HDL assignment warning at Lab4.v(60): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 60
-Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:wrapper" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 16
-Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex01" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 66
-Info (13000): Registers with preset signals will power-up high File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 48
+Warning (10230): Verilog HDL assignment warning at Lab4.v(56): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 56
+Warning (10230): Verilog HDL assignment warning at Lab4.v(59): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 59
+Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex01" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 68
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "value[2]" is converted into an equivalent circuit using register "value[2]~_emulated" and latch "value[2]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 48
-    Warning (13310): Register "value2[0]" is converted into an equivalent circuit using register "value2[0]~_emulated" and latch "value2[0]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 48
+    Warning (13310): Register "value[2]" is converted into an equivalent circuit using register "value[2]~_emulated" and latch "value[2]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
+    Warning (13310): Register "value2[0]" is converted into an equivalent circuit using register "value2[0]~_emulated" and latch "value2[0]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 111 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 78 logic cells
+    Info (21061): Implemented 93 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Mon Nov 08 11:54:31 2021
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Mon Nov 08 16:20:18 2021
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:14
 
 

@@ -60,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clkin",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
@@ -69,10 +73,6 @@
 				},
 				{
 					"name" : "pause",
-					"strict" : false
-				},
-				{
-					"name" : "clkin",
 					"strict" : false
 				}
 			]

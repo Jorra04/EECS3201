@@ -61,7 +61,6 @@ set_global_assignment -name VERILOG_FILE Lab4.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ClockDivider.v
 set_global_assignment -name ENABLE_OCT_DONE ON
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
@@ -78,7 +77,7 @@ set_location_assignment PIN_C16 -to hexValue[3]
 set_location_assignment PIN_C15 -to hexValue[2]
 set_location_assignment PIN_E15 -to hexValue[1]
 set_location_assignment PIN_P11 -to clkin
-set_instance_assignment -name IO_STANDARD "2.5 V" -to clkin
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clkin
 set_location_assignment PIN_C18 -to hexValue2[0]
 set_location_assignment PIN_D18 -to hexValue2[1]
 set_location_assignment PIN_E18 -to hexValue2[2]
@@ -90,4 +89,21 @@ set_location_assignment PIN_C10 -to s
 set_global_assignment -name VERILOG_FILE Lab2.v
 set_location_assignment PIN_B8 -to reset
 set_location_assignment PIN_A7 -to pause
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to pause
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hexValue2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to s
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
