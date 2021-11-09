@@ -1,5 +1,5 @@
 Fitter report for Lab4
-Mon Nov 08 16:20:26 2021
+Tue Nov 09 14:22:53 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 08 16:20:26 2021                     ;
+; Fitter Status                      ; Successful - Tue Nov 09 14:22:53 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab4                                                      ;
 ; Top-level Entity Name              ; Lab4                                                      ;
@@ -154,13 +154,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.09        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.9%      ;
-;     Processors 3-12        ;   0.9%      ;
+;     Processors 3-12        ;   0.8%      ;
 +----------------------------+-------------+
 
 
@@ -1433,7 +1433,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1446,10 +1446,10 @@ Warning (169177): 4 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin pause uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 3
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/output_files/Lab4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6227 megabytes
-    Info: Processing ended: Mon Nov 08 16:20:26 2021
+    Info: Peak virtual memory: 6228 megabytes
+    Info: Processing ended: Tue Nov 09 14:22:54 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +----------------------------+

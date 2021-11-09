@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hex01[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex01[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex02[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex03[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex04[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clkin",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

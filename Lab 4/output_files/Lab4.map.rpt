@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Mon Nov 08 16:20:17 2021
+Tue Nov 09 14:22:45 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 08 16:20:17 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 09 14:22:45 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab4                                                      ;
 ; Top-level Entity Name              ; Lab4                                                      ;
@@ -295,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Mon Nov 08 16:20:11 2021
+    Info: Processing started: Tue Nov 09 14:22:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -304,14 +304,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab4.v
 Info (12021): Found 1 design units, including 1 entities, in source file lab2.v
     Info (12023): Found entity 1: Lab2 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab2.v Line: 1
 Info (12127): Elaborating entity "Lab4" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at Lab4.v(53): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 53
 Warning (10230): Verilog HDL assignment warning at Lab4.v(56): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 56
-Warning (10230): Verilog HDL assignment warning at Lab4.v(59): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 59
-Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex01" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 68
-Info (13000): Registers with preset signals will power-up high File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
+Info (12128): Elaborating entity "Lab2" for hierarchy "Lab2:hex01" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 65
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 40
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "value[2]" is converted into an equivalent circuit using register "value[2]~_emulated" and latch "value[2]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
-    Warning (13310): Register "value2[0]" is converted into an equivalent circuit using register "value2[0]~_emulated" and latch "value2[0]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 43
+    Warning (13310): Register "value[2]" is converted into an equivalent circuit using register "value[2]~_emulated" and latch "value[2]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 40
+    Warning (13310): Register "value2[0]" is converted into an equivalent circuit using register "value2[0]~_emulated" and latch "value2[0]~1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 4/Lab4.v Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -320,9 +320,9 @@ Info (21057): Implemented 111 device resources after synthesis - the final resou
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 93 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Mon Nov 08 16:20:18 2021
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Tue Nov 09 14:22:45 2021
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 
 
