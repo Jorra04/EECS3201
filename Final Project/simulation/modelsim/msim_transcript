@@ -1,0 +1,43 @@
+# Reading pref.tcl
+# do EECS3201Final_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/fabiancojman/Documents/EECS3201/Final {C:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:27:39 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final" C:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v 
+# -- Compiling module EECS3201Final
+# 
+# Top level modules:
+# 	EECS3201Final
+# End time: 18:27:39 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fabiancojman/Documents/EECS3201/Final {C:/Users/fabiancojman/Documents/EECS3201/Final/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:27:39 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final" C:/Users/fabiancojman/Documents/EECS3201/Final/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 18:27:39 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fabiancojman/Documents/EECS3201/Final/db {C:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:27:39 on Oct 27,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final/db" C:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 18:27:39 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

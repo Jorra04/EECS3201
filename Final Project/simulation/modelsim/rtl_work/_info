@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/fabiancojman/Documents/EECS3201/Final/simulation/modelsim
+vEECS3201Final
+Z1 !s110 1635373659
+!i10b 1
+!s100 mjiK@>X8n83^h880PJQnP3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1m@:>BfkQOgOF:?7ALdL50
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1635372713
+8C:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v
+FC:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v
+!i122 0
+L0 1 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1635373659.000000
+!s107 C:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final|C:/Users/fabiancojman/Documents/EECS3201/Final/EECS3201Final.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/fabiancojman/Documents/EECS3201/Final
+Z8 tCvgOpt 0
+n@e@e@c@s3201@final
+vpll
+R1
+!i10b 1
+!s100 S8:kI@FPIC>6`XnEnGoRN0
+R2
+I5>0]8284`<Heoed=5OLmR2
+R3
+R0
+w1635372578
+8C:/Users/fabiancojman/Documents/EECS3201/Final/pll.v
+FC:/Users/fabiancojman/Documents/EECS3201/Final/pll.v
+!i122 1
+L0 40 124
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/fabiancojman/Documents/EECS3201/Final/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final|C:/Users/fabiancojman/Documents/EECS3201/Final/pll.v|
+!i113 1
+R6
+R7
+R8
+vpll_altpll
+R1
+!i10b 1
+!s100 cV:>FCUj35Iz6236?::eN1
+R2
+IRJNcnUON9ISfJE8S5JzV>1
+R3
+R0
+w1635372723
+8C:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v
+FC:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v
+!i122 2
+L0 31 79
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/fabiancojman/Documents/EECS3201/Final/db|C:/Users/fabiancojman/Documents/EECS3201/Final/db/pll_altpll.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/fabiancojman/Documents/EECS3201/Final/db
+R8

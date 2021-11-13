@@ -1,0 +1,10 @@
+module clockDivider(clkin, clkout);
+	
+	
+	
+	always @(posedge clkin) begin
+		
+	end
+	
+	
+endmodule;
