@@ -1,7 +1,7 @@
-module ScoreCounter(clkin, reset, gameOver, hex01, hex02, hex03, hex04);
+module ScoreCounter(clkin, reset, hex01, hex02, hex03, hex04);
 	input clkin, reset;
 	wire clkout;
-	input gameOver;
+
 	reg[3:0] thousandsSecond, hundredsSecond, tensSecond, onesSecond;
 	output[6:0] hex01, hex02, hex03, hex04;
 	reg[31:0] counter;
@@ -22,8 +22,7 @@ module ScoreCounter(clkin, reset, gameOver, hex01, hex02, hex03, hex04);
 			else
 			begin
 	
-				if(!gameOver)
-					if(!((thousandsSecond == 9) && (hundredsSecond == 9) && (tensSecond == 9) && (onesSecond == 9) ))
+				if(!((thousandsSecond == 9) && (hundredsSecond == 9) && (tensSecond == 9) && (onesSecond == 9) ))
 				begin
 					counter <= counter + 1;
 			
@@ -54,7 +53,6 @@ module ScoreCounter(clkin, reset, gameOver, hex01, hex02, hex03, hex04);
 							onesSecond <= onesSecond + 1;
 					end
 				end
-				
 			end
 		end
 	

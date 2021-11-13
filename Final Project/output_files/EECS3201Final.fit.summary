@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Nov 13 11:52:28 2021
+Fitter Status : Successful - Sat Nov 13 17:50:57 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 Revision Name : EECS3201Final
 Top-level Entity Name : EECS3201Final
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 609 / 49,760 ( 1 % )
-    Total combinational functions : 553 / 49,760 ( 1 % )
-    Dedicated logic registers : 218 / 49,760 ( < 1 % )
-Total registers : 218
+Total logic elements : 669 / 49,760 ( 1 % )
+    Total combinational functions : 608 / 49,760 ( 1 % )
+    Dedicated logic registers : 220 / 49,760 ( < 1 % )
+Total registers : 220
 Total pins : 48 / 360 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

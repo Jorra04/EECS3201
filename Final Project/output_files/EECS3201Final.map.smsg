@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at EECS3201Final.v(94): always construct contains both blocking and non-blocking assignments File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final Project/EECS3201Final.v Line: 94
+Warning (10268): Verilog HDL information at ScoreCounter.v(10): always construct contains both blocking and non-blocking assignments File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final Project/ScoreCounter.v Line: 10
