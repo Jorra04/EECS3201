@@ -42,7 +42,7 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 	reg gameOver;
 
 	reg[3:0] redTrue;
-	reg alternateColour;
+	reg alternateTitleColour;
 	//rng state reg and output
 	reg rng_state;
 	wire [7:0] rng_out;
@@ -154,14 +154,14 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 			gameOver <= 1'b0;
 			rng_counter <= 0;
 			redTrue <= 4'b1111;
-			alternateColour <= 1'b0;			
+			alternateTitleColour <= 1'b0;			
 
 		end else begin 
 			//if x and y are within the draw area draw some pixels
 			if(de)begin	
 				if(!startGame) begin
 				
-					
+					//Drawing the start screen
 					integer i;
 					integer CLOUD_OFFSET_y_count = 1;
 					if((0 <= y && y < 350)) begin
@@ -198,11 +198,30 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 
 						
 					end else begin
+						if((360 <= y && y <= 375) && (255 <= x && x <= 455)) begin
+							//Drawing the P
+							if((360 <= y && y <= 375) && (255 <= x && x <= 257)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((360 <= y && y <= 362) && (255 <= x && x <= 265)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else begin
+								r <= 4'b0111;
+								g <= 4'b1110;
+								b <= 4'b0000;
+							end
+						
+						end else begin
 					
-						r <= 4'b0111;
-						g <= 4'b1110;
-						b <= 4'b0000;
+							r <= 4'b0111;
+							g <= 4'b1110;
+							b <= 4'b0000;
+						end
 					end
+					//End of start screen drawing
 				end else if(!gameOver) begin
 					//Check if the player object is within the target object. ???????????????	 
 					if((playerx < targetx) || (playery < targety) || (playerx + 32) > (targetx + targetsize) || (playery + 32) > (targety + targetsize))begin
@@ -496,13 +515,13 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 						end
 						
 						
-						cloudMovement <= cloudMovement + movement;
-						cloudMovement2 <= cloudMovement2 + movement2;
+						cloudMovement <= cloudMovement +  (5*movement);
+						cloudMovement2 <= cloudMovement2 + (5*movement2);
 					
 						
 					end if(counter == 60)begin
 						counter <= 0;
-						
+						alternateTitleColour <= ~alternateTitleColour;
 						redTrue <= ~redTrue;
 						targetsize <= targetsize - 1'b1;
 						rng_counter <= 0;

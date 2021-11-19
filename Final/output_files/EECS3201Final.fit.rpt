@@ -1,5 +1,5 @@
 Fitter report for EECS3201Final
-Fri Nov 19 01:22:37 2021
+Fri Nov 19 17:16:59 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -70,15 +70,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 19 01:22:37 2021                     ;
+; Fitter Status                      ; Successful - Fri Nov 19 17:16:59 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3201Final                                             ;
 ; Top-level Entity Name              ; EECS3201Final                                             ;
 ; Family                             ; MAX 10                                                    ;
 ; Device                             ; 10M50DAF484C7G                                            ;
 ; Timing Models                      ; Final                                                     ;
-; Total logic elements               ; 3,890 / 49,760 ( 8 % )                                    ;
-;     Total combinational functions  ; 3,834 / 49,760 ( 8 % )                                    ;
+; Total logic elements               ; 3,886 / 49,760 ( 8 % )                                    ;
+;     Total combinational functions  ; 3,831 / 49,760 ( 8 % )                                    ;
 ;     Dedicated logic registers      ; 298 / 49,760 ( < 1 % )                                    ;
 ; Total registers                    ; 298                                                       ;
 ; Total pins                         ; 49 / 360 ( 14 % )                                         ;
@@ -156,19 +156,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.56        ;
+; Average used               ; 1.59        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.7%      ;
-;     Processor 3            ;   5.4%      ;
-;     Processor 4            ;   5.3%      ;
-;     Processor 5            ;   5.2%      ;
-;     Processor 6            ;   5.1%      ;
-;     Processor 7            ;   5.1%      ;
-;     Processor 8            ;   5.0%      ;
-;     Processors 9-12        ;   4.7%      ;
+;     Processor 2            ;   6.0%      ;
+;     Processor 3            ;   5.7%      ;
+;     Processor 4            ;   5.6%      ;
+;     Processor 5            ;   5.5%      ;
+;     Processor 6            ;   5.4%      ;
+;     Processor 7            ;   5.3%      ;
+;     Processor 8            ;   5.3%      ;
+;     Processors 9-12        ;   5.0%      ;
 +----------------------------+-------------+
 
 
@@ -178,8 +178,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 4252 ) ; 0.00 % ( 0 / 4252 )        ; 0.00 % ( 0 / 4252 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 4252 ) ; 0.00 % ( 0 / 4252 )        ; 0.00 % ( 0 / 4252 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 4249 ) ; 0.00 % ( 0 / 4249 )        ; 0.00 % ( 0 / 4249 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 4249 ) ; 0.00 % ( 0 / 4249 )        ; 0.00 % ( 0 / 4249 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -202,7 +202,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4233 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 4230 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 19 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -218,26 +218,26 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 3,890 / 49,760 ( 8 % ) ;
-;     -- Combinational with no register       ; 3592                   ;
-;     -- Register only                        ; 56                     ;
-;     -- Combinational with a register        ; 242                    ;
+; Total logic elements                        ; 3,886 / 49,760 ( 8 % ) ;
+;     -- Combinational with no register       ; 3588                   ;
+;     -- Register only                        ; 55                     ;
+;     -- Combinational with a register        ; 243                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 800                    ;
-;     -- 3 input functions                    ; 872                    ;
-;     -- <=2 input functions                  ; 2162                   ;
-;     -- Register only                        ; 56                     ;
+;     -- 4 input functions                    ; 798                    ;
+;     -- 3 input functions                    ; 870                    ;
+;     -- <=2 input functions                  ; 2163                   ;
+;     -- Register only                        ; 55                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 1164                   ;
+;     -- normal mode                          ; 1161                   ;
 ;     -- arithmetic mode                      ; 2670                   ;
 ;                                             ;                        ;
 ; Total registers*                            ; 298 / 51,509 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 298 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 309 / 3,110 ( 10 % )   ;
+; Total LABs:  partially or completely used   ; 332 / 3,110 ( 11 % )   ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 49 / 360 ( 14 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
@@ -257,11 +257,11 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 1.9% / 1.7% / 2.1%     ;
-; Peak interconnect usage (total/H/V)         ; 15.7% / 15.4% / 17.4%  ;
+; Average interconnect usage (total/H/V)      ; 2.1% / 1.8% / 2.5%     ;
+; Peak interconnect usage (total/H/V)         ; 18.9% / 17.1% / 21.5%  ;
 ; Maximum fan-out                             ; 165                    ;
-; Highest non-global fan-out                  ; 144                    ;
-; Total fan-out                               ; 11197                  ;
+; Highest non-global fan-out                  ; 145                    ;
+; Total fan-out                               ; 11181                  ;
 ; Average fan-out                             ; 2.60                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -275,26 +275,26 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 3890 / 49760 ( 8 % )  ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 3592                  ; 0                              ;
-;     -- Register only                        ; 56                    ; 0                              ;
-;     -- Combinational with a register        ; 242                   ; 0                              ;
+; Total logic elements                        ; 3886 / 49760 ( 8 % )  ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 3588                  ; 0                              ;
+;     -- Register only                        ; 55                    ; 0                              ;
+;     -- Combinational with a register        ; 243                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 800                   ; 0                              ;
-;     -- 3 input functions                    ; 872                   ; 0                              ;
-;     -- <=2 input functions                  ; 2162                  ; 0                              ;
-;     -- Register only                        ; 56                    ; 0                              ;
+;     -- 4 input functions                    ; 798                   ; 0                              ;
+;     -- 3 input functions                    ; 870                   ; 0                              ;
+;     -- <=2 input functions                  ; 2163                  ; 0                              ;
+;     -- Register only                        ; 55                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 1164                  ; 0                              ;
+;     -- normal mode                          ; 1161                  ; 0                              ;
 ;     -- arithmetic mode                      ; 2670                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 298                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 298 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 309 / 3110 ( 10 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 332 / 3110 ( 11 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 49                    ; 0                              ;
@@ -313,8 +313,8 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 11200                 ; 214                            ;
-;     -- Registered Connections               ; 2523                  ; 0                              ;
+;     -- Total Connections                    ; 11184                 ; 214                            ;
+;     -- Registered Connections               ; 2530                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 203                            ;
@@ -349,7 +349,7 @@ The pin-out file can be found in C:/Users/Jorra/Documents/Coding Practice/School
 ; MISO  ; V12   ; 4        ; 38           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; clkin ; P11   ; 3        ; 34           ; 0            ; 28           ; 49                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; pause ; A7    ; 7        ; 49           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
-; rst   ; B8    ; 7        ; 46           ; 54           ; 28           ; 144                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; rst   ; B8    ; 7        ; 46           ; 54           ; 28           ; 145                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 
 
@@ -1041,14 +1041,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                            ; Entity Name         ; Library Name ;
 +----------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |EECS3201Final                         ; 3890 (3626) ; 298 (158)                 ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 49   ; 0            ; 3592 (3451)  ; 56 (5)            ; 242 (170)        ; 0          ; |EECS3201Final                                                                                                 ; EECS3201Final       ; work         ;
-;    |ADXL345Handler:accelerometer|      ; 116 (66)    ; 84 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (30)      ; 45 (4)            ; 39 (32)          ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer                                                                    ; ADXL345Handler      ; work         ;
-;       |VeryBadSPI:adxl345|             ; 50 (50)     ; 48 (48)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 41 (41)           ; 7 (7)            ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer|VeryBadSPI:adxl345                                                 ; VeryBadSPI          ; work         ;
-;    |ScoreCounter:score|                ; 124 (95)    ; 48 (48)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 76 (47)      ; 0 (0)             ; 48 (48)          ; 0          ; |EECS3201Final|ScoreCounter:score                                                                              ; ScoreCounter        ; work         ;
+; |EECS3201Final                         ; 3886 (3623) ; 298 (158)                 ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 49   ; 0            ; 3588 (3447)  ; 55 (5)            ; 243 (172)        ; 0          ; |EECS3201Final                                                                                                 ; EECS3201Final       ; work         ;
+;    |ADXL345Handler:accelerometer|      ; 117 (67)    ; 84 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (31)      ; 44 (6)            ; 40 (29)          ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer                                                                    ; ADXL345Handler      ; work         ;
+;       |VeryBadSPI:adxl345|             ; 51 (51)     ; 48 (48)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 38 (38)           ; 11 (11)          ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer|VeryBadSPI:adxl345                                                 ; VeryBadSPI          ; work         ;
+;    |ScoreCounter:score|                ; 123 (95)    ; 48 (48)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 75 (47)      ; 0 (0)             ; 48 (48)          ; 0          ; |EECS3201Final|ScoreCounter:score                                                                              ; ScoreCounter        ; work         ;
 ;       |Lab2:displayHex01|              ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex01                                                            ; Lab2                ; work         ;
 ;       |Lab2:displayHex02|              ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex02                                                            ; Lab2                ; work         ;
 ;       |Lab2:displayHex03|              ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex03                                                            ; Lab2                ; work         ;
-;       |Lab2:displayHex04|              ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex04                                                            ; Lab2                ; work         ;
+;       |Lab2:displayHex04|              ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex04                                                            ; Lab2                ; work         ;
 ;    |lfsr:rng|                          ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 2 (2)            ; 0          ; |EECS3201Final|lfsr:rng                                                                                        ; lfsr                ; work         ;
 ;    |lpm_divide:Mod0|                   ; 33 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;       |lpm_divide_9kl:auto_generated|  ; 33 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |EECS3201Final|lpm_divide:Mod0|lpm_divide_9kl:auto_generated                                                   ; lpm_divide_9kl      ; work         ;
@@ -1111,169 +1111,170 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; hex04[4]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; hex04[5]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; hex04[6]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; rst        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; rst        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; clkin      ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; pause      ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; pause      ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; MISO       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                      ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                   ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------------------------+-------------------+---------+
-; rst                                                                   ;                   ;         ;
-;      - y[0]                                                           ; 1                 ; 6       ;
-;      - y[1]                                                           ; 1                 ; 6       ;
-;      - y[2]                                                           ; 1                 ; 6       ;
-;      - y[3]                                                           ; 1                 ; 6       ;
-;      - y[4]                                                           ; 1                 ; 6       ;
-;      - y[5]                                                           ; 1                 ; 6       ;
-;      - y[6]                                                           ; 1                 ; 6       ;
-;      - y[7]                                                           ; 1                 ; 6       ;
-;      - y[8]                                                           ; 1                 ; 6       ;
-;      - y[9]                                                           ; 1                 ; 6       ;
-;      - x[0]                                                           ; 1                 ; 6       ;
-;      - x[1]                                                           ; 1                 ; 6       ;
-;      - x[2]                                                           ; 1                 ; 6       ;
-;      - x[3]                                                           ; 1                 ; 6       ;
-;      - x[4]                                                           ; 1                 ; 6       ;
-;      - x[5]                                                           ; 1                 ; 6       ;
-;      - x[6]                                                           ; 1                 ; 6       ;
-;      - x[7]                                                           ; 1                 ; 6       ;
-;      - x[8]                                                           ; 1                 ; 6       ;
-;      - x[9]                                                           ; 1                 ; 6       ;
-;      - ScoreCounter:score|onesSecond[0]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|onesSecond[1]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|onesSecond[2]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|onesSecond[3]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|tensSecond[0]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|tensSecond[1]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|tensSecond[2]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|tensSecond[3]                               ; 1                 ; 6       ;
-;      - ScoreCounter:score|hundredsSecond[0]                           ; 1                 ; 6       ;
-;      - ScoreCounter:score|hundredsSecond[1]                           ; 1                 ; 6       ;
-;      - ScoreCounter:score|hundredsSecond[2]                           ; 1                 ; 6       ;
-;      - ScoreCounter:score|hundredsSecond[3]                           ; 1                 ; 6       ;
-;      - ScoreCounter:score|thousandsSecond[0]                          ; 1                 ; 6       ;
-;      - ScoreCounter:score|thousandsSecond[1]                          ; 1                 ; 6       ;
-;      - ScoreCounter:score|thousandsSecond[2]                          ; 1                 ; 6       ;
-;      - ScoreCounter:score|thousandsSecond[3]                          ; 1                 ; 6       ;
-;      - ADXL345Handler:accelerometer|adxl345setup                      ; 1                 ; 6       ;
-;      - playerx[5]                                                     ; 1                 ; 6       ;
-;      - playerx[6]                                                     ; 1                 ; 6       ;
-;      - playerx[7]                                                     ; 1                 ; 6       ;
-;      - playerx[8]                                                     ; 1                 ; 6       ;
-;      - playerx[9]                                                     ; 1                 ; 6       ;
-;      - playery[5]                                                     ; 1                 ; 6       ;
-;      - playery[6]                                                     ; 1                 ; 6       ;
-;      - playery[7]                                                     ; 1                 ; 6       ;
-;      - playery[8]                                                     ; 1                 ; 6       ;
-;      - playerx[4]                                                     ; 1                 ; 6       ;
-;      - playery[4]                                                     ; 1                 ; 6       ;
-;      - playery[3]                                                     ; 1                 ; 6       ;
-;      - playery[2]                                                     ; 1                 ; 6       ;
-;      - targetsize[8]                                                  ; 1                 ; 6       ;
-;      - playery[1]                                                     ; 1                 ; 6       ;
-;      - targetsize[7]                                                  ; 1                 ; 6       ;
-;      - targetsize[6]                                                  ; 1                 ; 6       ;
-;      - targetsize[5]                                                  ; 1                 ; 6       ;
-;      - targetsize[4]                                                  ; 1                 ; 6       ;
-;      - targetsize[3]                                                  ; 1                 ; 6       ;
-;      - targetsize[2]                                                  ; 1                 ; 6       ;
-;      - targetsize[1]                                                  ; 1                 ; 6       ;
-;      - ADXL345Handler:accelerometer|CS                                ; 1                 ; 6       ;
-;      - targety[7]                                                     ; 1                 ; 6       ;
-;      - targety[6]                                                     ; 1                 ; 6       ;
-;      - targety[5]                                                     ; 1                 ; 6       ;
-;      - targety[4]                                                     ; 1                 ; 6       ;
-;      - targety[3]                                                     ; 1                 ; 6       ;
-;      - targety[2]                                                     ; 1                 ; 6       ;
-;      - targety[1]                                                     ; 1                 ; 6       ;
-;      - targety[0]                                                     ; 1                 ; 6       ;
-;      - targetx[7]                                                     ; 1                 ; 6       ;
-;      - targetx[6]                                                     ; 1                 ; 6       ;
-;      - targetx[5]                                                     ; 1                 ; 6       ;
-;      - targetx[4]                                                     ; 1                 ; 6       ;
-;      - targetx[3]                                                     ; 1                 ; 6       ;
-;      - targetx[2]                                                     ; 1                 ; 6       ;
-;      - targetx[1]                                                     ; 1                 ; 6       ;
-;      - targetsize[0]                                                  ; 1                 ; 6       ;
-;      - targetx[0]                                                     ; 1                 ; 6       ;
-;      - playerx[3]                                                     ; 1                 ; 6       ;
-;      - playerx[2]                                                     ; 1                 ; 6       ;
-;      - playerx[1]                                                     ; 1                 ; 6       ;
-;      - playerx[0]                                                     ; 1                 ; 6       ;
-;      - gameOver                                                       ; 1                 ; 6       ;
-;      - startGame                                                      ; 1                 ; 6       ;
-;      - r[0]~87                                                        ; 1                 ; 6       ;
-;      - ADXL345Handler:accelerometer|spirst                            ; 1                 ; 6       ;
-;      - getData                                                        ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[0]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[31]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[30]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[29]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[25]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[28]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[27]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[26]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[23]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[22]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[21]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[24]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[20]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[19]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[17]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[18]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[15]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[16]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[14]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[13]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[12]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[11]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[10]                                 ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[9]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[7]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[8]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[6]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[5]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[4]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[3]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[2]                                  ; 1                 ; 6       ;
-;      - ScoreCounter:score|counter[1]                                  ; 1                 ; 6       ;
-;      - lfsr:rng|q[0]                                                  ; 1                 ; 6       ;
-;      - counter[5]                                                     ; 1                 ; 6       ;
-;      - counter[4]                                                     ; 1                 ; 6       ;
-;      - counter[3]                                                     ; 1                 ; 6       ;
-;      - counter[2]                                                     ; 1                 ; 6       ;
-;      - counter[1]                                                     ; 1                 ; 6       ;
-;      - counter[0]                                                     ; 1                 ; 6       ;
-;      - lfsr:rng|q[7]                                                  ; 1                 ; 6       ;
-;      - cloudMovement[31]~93                                           ; 1                 ; 6       ;
-;      - ADXL345Handler:accelerometer|dataXout[0]~1                     ; 1                 ; 6       ;
-;      - lfsr:rng|q[5]                                                  ; 1                 ; 6       ;
-;      - lfsr:rng|q[4]                                                  ; 1                 ; 6       ;
-;      - lfsr:rng|q[3]                                                  ; 1                 ; 6       ;
-;      - rng_state                                                      ; 1                 ; 6       ;
-;      - lfsr:rng|q[6]                                                  ; 1                 ; 6       ;
-;      - lfsr:rng|q[2]                                                  ; 1                 ; 6       ;
-;      - rng_counter[7]                                                 ; 1                 ; 6       ;
-;      - rng_counter[6]                                                 ; 1                 ; 6       ;
-;      - rng_counter[5]                                                 ; 1                 ; 6       ;
-;      - rng_counter[4]                                                 ; 1                 ; 6       ;
-;      - rng_counter[3]                                                 ; 1                 ; 6       ;
-;      - rng_counter[2]                                                 ; 1                 ; 6       ;
-;      - rng_counter[1]                                                 ; 1                 ; 6       ;
-;      - rng_counter[0]                                                 ; 1                 ; 6       ;
-;      - rng_counter[8]                                                 ; 1                 ; 6       ;
-;      - lfsr:rng|q[1]                                                  ; 1                 ; 6       ;
-; clkin                                                                 ;                   ;         ;
-; pause                                                                 ;                   ;         ;
-;      - startGame                                                      ; 1                 ; 0       ;
-; MISO                                                                  ;                   ;         ;
-;      - ADXL345Handler:accelerometer|VeryBadSPI:adxl345|preMISO~feeder ; 0                 ; 6       ;
-+-----------------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                               ;
++----------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                            ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------+-------------------+---------+
+; rst                                                            ;                   ;         ;
+;      - y[0]                                                    ; 0                 ; 6       ;
+;      - y[1]                                                    ; 0                 ; 6       ;
+;      - y[2]                                                    ; 0                 ; 6       ;
+;      - y[3]                                                    ; 0                 ; 6       ;
+;      - y[4]                                                    ; 0                 ; 6       ;
+;      - y[5]                                                    ; 0                 ; 6       ;
+;      - y[6]                                                    ; 0                 ; 6       ;
+;      - y[7]                                                    ; 0                 ; 6       ;
+;      - y[8]                                                    ; 0                 ; 6       ;
+;      - y[9]                                                    ; 0                 ; 6       ;
+;      - x[0]                                                    ; 0                 ; 6       ;
+;      - x[1]                                                    ; 0                 ; 6       ;
+;      - x[2]                                                    ; 0                 ; 6       ;
+;      - x[3]                                                    ; 0                 ; 6       ;
+;      - x[4]                                                    ; 0                 ; 6       ;
+;      - x[5]                                                    ; 0                 ; 6       ;
+;      - x[6]                                                    ; 0                 ; 6       ;
+;      - x[7]                                                    ; 0                 ; 6       ;
+;      - x[8]                                                    ; 0                 ; 6       ;
+;      - x[9]                                                    ; 0                 ; 6       ;
+;      - ScoreCounter:score|onesSecond[0]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|onesSecond[1]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|onesSecond[2]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|onesSecond[3]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|tensSecond[0]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|tensSecond[1]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|tensSecond[2]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|tensSecond[3]                        ; 0                 ; 6       ;
+;      - ScoreCounter:score|hundredsSecond[0]                    ; 0                 ; 6       ;
+;      - ScoreCounter:score|hundredsSecond[1]                    ; 0                 ; 6       ;
+;      - ScoreCounter:score|hundredsSecond[2]                    ; 0                 ; 6       ;
+;      - ScoreCounter:score|hundredsSecond[3]                    ; 0                 ; 6       ;
+;      - ScoreCounter:score|thousandsSecond[0]                   ; 0                 ; 6       ;
+;      - ScoreCounter:score|thousandsSecond[1]                   ; 0                 ; 6       ;
+;      - ScoreCounter:score|thousandsSecond[2]                   ; 0                 ; 6       ;
+;      - ScoreCounter:score|thousandsSecond[3]                   ; 0                 ; 6       ;
+;      - ADXL345Handler:accelerometer|adxl345setup               ; 0                 ; 6       ;
+;      - r[1]~reg0                                               ; 0                 ; 6       ;
+;      - playerx[5]                                              ; 0                 ; 6       ;
+;      - playerx[6]                                              ; 0                 ; 6       ;
+;      - playerx[7]                                              ; 0                 ; 6       ;
+;      - playerx[8]                                              ; 0                 ; 6       ;
+;      - playerx[9]                                              ; 0                 ; 6       ;
+;      - playery[5]                                              ; 0                 ; 6       ;
+;      - playery[6]                                              ; 0                 ; 6       ;
+;      - playery[7]                                              ; 0                 ; 6       ;
+;      - playery[8]                                              ; 0                 ; 6       ;
+;      - playerx[4]                                              ; 0                 ; 6       ;
+;      - playery[4]                                              ; 0                 ; 6       ;
+;      - playery[3]                                              ; 0                 ; 6       ;
+;      - playery[2]                                              ; 0                 ; 6       ;
+;      - targetsize[8]                                           ; 0                 ; 6       ;
+;      - playery[1]                                              ; 0                 ; 6       ;
+;      - targetsize[7]                                           ; 0                 ; 6       ;
+;      - targetsize[6]                                           ; 0                 ; 6       ;
+;      - targetsize[5]                                           ; 0                 ; 6       ;
+;      - targetsize[4]                                           ; 0                 ; 6       ;
+;      - targetsize[3]                                           ; 0                 ; 6       ;
+;      - targetsize[2]                                           ; 0                 ; 6       ;
+;      - targetsize[1]                                           ; 0                 ; 6       ;
+;      - ADXL345Handler:accelerometer|CS                         ; 0                 ; 6       ;
+;      - targety[7]                                              ; 0                 ; 6       ;
+;      - targety[6]                                              ; 0                 ; 6       ;
+;      - targety[5]                                              ; 0                 ; 6       ;
+;      - targety[4]                                              ; 0                 ; 6       ;
+;      - targety[3]                                              ; 0                 ; 6       ;
+;      - targety[2]                                              ; 0                 ; 6       ;
+;      - targety[1]                                              ; 0                 ; 6       ;
+;      - targety[0]                                              ; 0                 ; 6       ;
+;      - targetx[7]                                              ; 0                 ; 6       ;
+;      - targetx[6]                                              ; 0                 ; 6       ;
+;      - targetx[5]                                              ; 0                 ; 6       ;
+;      - targetx[4]                                              ; 0                 ; 6       ;
+;      - targetx[3]                                              ; 0                 ; 6       ;
+;      - targetx[2]                                              ; 0                 ; 6       ;
+;      - targetx[1]                                              ; 0                 ; 6       ;
+;      - targetsize[0]                                           ; 0                 ; 6       ;
+;      - targetx[0]                                              ; 0                 ; 6       ;
+;      - playerx[3]                                              ; 0                 ; 6       ;
+;      - playerx[2]                                              ; 0                 ; 6       ;
+;      - playerx[1]                                              ; 0                 ; 6       ;
+;      - playerx[0]                                              ; 0                 ; 6       ;
+;      - gameOver                                                ; 0                 ; 6       ;
+;      - startGame                                               ; 0                 ; 6       ;
+;      - r[0]~101                                                ; 0                 ; 6       ;
+;      - ADXL345Handler:accelerometer|spirst                     ; 0                 ; 6       ;
+;      - getData                                                 ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[0]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[31]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[30]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[29]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[25]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[26]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[28]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[27]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[23]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[22]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[21]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[24]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[20]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[19]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[17]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[18]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[15]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[14]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[13]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[16]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[12]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[11]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[10]                          ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[9]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[7]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[8]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[6]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[5]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[4]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[3]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[2]                           ; 0                 ; 6       ;
+;      - ScoreCounter:score|counter[1]                           ; 0                 ; 6       ;
+;      - lfsr:rng|q[0]                                           ; 0                 ; 6       ;
+;      - counter[5]                                              ; 0                 ; 6       ;
+;      - counter[4]                                              ; 0                 ; 6       ;
+;      - counter[3]                                              ; 0                 ; 6       ;
+;      - counter[2]                                              ; 0                 ; 6       ;
+;      - counter[1]                                              ; 0                 ; 6       ;
+;      - counter[0]                                              ; 0                 ; 6       ;
+;      - lfsr:rng|q[7]                                           ; 0                 ; 6       ;
+;      - cloudMovement[31]~93                                    ; 0                 ; 6       ;
+;      - ADXL345Handler:accelerometer|dataXout[0]~1              ; 0                 ; 6       ;
+;      - lfsr:rng|q[5]                                           ; 0                 ; 6       ;
+;      - lfsr:rng|q[4]                                           ; 0                 ; 6       ;
+;      - lfsr:rng|q[3]                                           ; 0                 ; 6       ;
+;      - rng_state                                               ; 0                 ; 6       ;
+;      - lfsr:rng|q[6]                                           ; 0                 ; 6       ;
+;      - lfsr:rng|q[2]                                           ; 0                 ; 6       ;
+;      - rng_counter[7]                                          ; 0                 ; 6       ;
+;      - rng_counter[6]                                          ; 0                 ; 6       ;
+;      - rng_counter[5]                                          ; 0                 ; 6       ;
+;      - rng_counter[4]                                          ; 0                 ; 6       ;
+;      - rng_counter[3]                                          ; 0                 ; 6       ;
+;      - rng_counter[2]                                          ; 0                 ; 6       ;
+;      - rng_counter[1]                                          ; 0                 ; 6       ;
+;      - rng_counter[0]                                          ; 0                 ; 6       ;
+;      - rng_counter[8]                                          ; 0                 ; 6       ;
+;      - lfsr:rng|q[1]                                           ; 0                 ; 6       ;
+; clkin                                                          ;                   ;         ;
+; pause                                                          ;                   ;         ;
+;      - startGame                                               ; 0                 ; 0       ;
+; MISO                                                           ;                   ;         ;
+;      - ADXL345Handler:accelerometer|VeryBadSPI:adxl345|preMISO ; 0                 ; 6       ;
++----------------------------------------------------------------+-------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1281,86 +1282,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                            ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; ADXL345Handler:accelerometer|CS~1                                               ; LCCOMB_X37_Y38_N22 ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout                          ; FF_X45_Y50_N5      ; 47      ; Clock                      ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; ADXL345Handler:accelerometer|adxl345setup                                       ; FF_X41_Y38_N25     ; 12      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|dataXout[0]~1                                      ; LCCOMB_X41_Y38_N20 ; 13      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|dataXout[0]~3                                      ; LCCOMB_X38_Y38_N4  ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|dataXout[8]                                        ; FF_X42_Y38_N5      ; 10      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|dataYout[8]                                        ; FF_X45_Y38_N9      ; 8       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|input_reg[10]~2                                    ; LCCOMB_X39_Y38_N14 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ADXL345Handler:accelerometer|spirst                                             ; FF_X39_Y38_N5      ; 16      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; Equal3~5                                                                        ; LCCOMB_X46_Y31_N6  ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ScoreCounter:score|thousandsSecond[0]~2                                         ; LCCOMB_X51_Y39_N22 ; 48      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; always2~363                                                                     ; LCCOMB_X50_Y39_N26 ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; b[3]~1                                                                          ; LCCOMB_X49_Y27_N22 ; 12      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|CS~1                                               ; LCCOMB_X55_Y31_N4  ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout                          ; FF_X77_Y39_N17     ; 47      ; Clock                      ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; ADXL345Handler:accelerometer|adxl345setup                                       ; FF_X54_Y33_N9      ; 12      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|dataXout[0]~1                                      ; LCCOMB_X55_Y30_N14 ; 13      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|dataXout[0]~3                                      ; LCCOMB_X55_Y30_N6  ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|dataXout[8]                                        ; FF_X46_Y39_N5      ; 10      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|dataYout[8]                                        ; FF_X46_Y39_N17     ; 8       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|input_reg[10]~2                                    ; LCCOMB_X55_Y30_N12 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ADXL345Handler:accelerometer|spirst                                             ; FF_X54_Y30_N27     ; 16      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
+; Equal3~2                                                                        ; LCCOMB_X40_Y30_N0  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ScoreCounter:score|thousandsSecond[0]~4                                         ; LCCOMB_X46_Y43_N30 ; 48      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; always2~347                                                                     ; LCCOMB_X45_Y40_N18 ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; clkin                                                                           ; PIN_P11            ; 2       ; Clock                      ; no     ; --                   ; --               ; --                        ;
 ; clkin                                                                           ; PIN_P11            ; 48      ; Clock                      ; yes    ; Global Clock         ; GCLK16           ; --                        ;
-; cloudMovement[31]~93                                                            ; LCCOMB_X46_Y33_N22 ; 65      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; getData                                                                         ; FF_X47_Y31_N9      ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; cloudMovement[31]~93                                                            ; LCCOMB_X43_Y33_N2  ; 65      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; de~0                                                                            ; LCCOMB_X27_Y32_N4  ; 12      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; getData                                                                         ; FF_X44_Y30_N5      ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; pause                                                                           ; PIN_A7             ; 1       ; Clock                      ; no     ; --                   ; --               ; --                        ;
 ; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1              ; 165     ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
 ; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1              ; 37      ; Clock                      ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; r[0]~87                                                                         ; LCCOMB_X49_Y39_N28 ; 11      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; rng_state                                                                       ; FF_X47_Y38_N5      ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; rst                                                                             ; PIN_B8             ; 144     ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; startGame                                                                       ; FF_X50_Y39_N19     ; 16      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; targetsize[0]~26                                                                ; LCCOMB_X50_Y40_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; targetsize[3]~28                                                                ; LCCOMB_X46_Y31_N8  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; targetx[0]~4                                                                    ; LCCOMB_X51_Y37_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; targety[0]~4                                                                    ; LCCOMB_X49_Y37_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; r[0]~101                                                                        ; LCCOMB_X46_Y43_N24 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rng_state                                                                       ; FF_X46_Y36_N27     ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rst                                                                             ; PIN_B8             ; 145     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
+; startGame                                                                       ; FF_X46_Y43_N19     ; 18      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; targetsize[0]~26                                                                ; LCCOMB_X46_Y36_N30 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; targetsize[2]~27                                                                ; LCCOMB_X46_Y36_N4  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; targetx[0]~4                                                                    ; LCCOMB_X47_Y40_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; targety[0]~4                                                                    ; LCCOMB_X47_Y41_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +---------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                            ;
-+---------------------------------------------------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                            ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout                          ; FF_X45_Y50_N5 ; 47      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
-; clkin                                                                           ; PIN_P11       ; 48      ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1         ; 165     ; 36                                   ; Global Clock         ; GCLK18           ; --                        ;
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1         ; 37      ; 18                                   ; Global Clock         ; GCLK19           ; --                        ;
-+---------------------------------------------------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                             ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                            ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout                          ; FF_X77_Y39_N17 ; 47      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; clkin                                                                           ; PIN_P11        ; 48      ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1          ; 165     ; 41                                   ; Global Clock         ; GCLK18           ; --                        ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] ; PLL_1          ; 37      ; 18                                   ; Global Clock         ; GCLK19           ; --                        ;
++---------------------------------------------------------------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------+
-; Routing Usage Summary                             ;
-+-----------------------+---------------------------+
-; Routing Resource Type ; Usage                     ;
-+-----------------------+---------------------------+
-; Block interconnects   ; 5,394 / 148,641 ( 4 % )   ;
-; C16 interconnects     ; 60 / 5,382 ( 1 % )        ;
-; C4 interconnects      ; 2,267 / 106,704 ( 2 % )   ;
-; Direct links          ; 1,190 / 148,641 ( < 1 % ) ;
-; Global clocks         ; 4 / 20 ( 20 % )           ;
-; Local interconnects   ; 1,087 / 49,760 ( 2 % )    ;
-; NSLEEPs               ; 0 / 500 ( 0 % )           ;
-; R24 interconnects     ; 78 / 5,406 ( 1 % )        ;
-; R4 interconnects      ; 2,438 / 147,764 ( 2 % )   ;
-+-----------------------+---------------------------+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 5,485 / 148,641 ( 4 % ) ;
+; C16 interconnects     ; 58 / 5,382 ( 1 % )      ;
+; C4 interconnects      ; 2,737 / 106,704 ( 3 % ) ;
+; Direct links          ; 949 / 148,641 ( < 1 % ) ;
+; Global clocks         ; 4 / 20 ( 20 % )         ;
+; Local interconnects   ; 1,047 / 49,760 ( 2 % )  ;
+; NSLEEPs               ; 0 / 500 ( 0 % )         ;
+; R24 interconnects     ; 77 / 5,406 ( 1 % )      ;
+; R4 interconnects      ; 2,646 / 147,764 ( 2 % ) ;
++-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.59) ; Number of LABs  (Total = 309) ;
+; Number of Logic Elements  (Average = 11.70) ; Number of LABs  (Total = 332) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 13                            ;
-; 2                                           ; 3                             ;
-; 3                                           ; 9                             ;
-; 4                                           ; 5                             ;
-; 5                                           ; 7                             ;
-; 6                                           ; 6                             ;
-; 7                                           ; 3                             ;
+; 1                                           ; 29                            ;
+; 2                                           ; 14                            ;
+; 3                                           ; 4                             ;
+; 4                                           ; 6                             ;
+; 5                                           ; 12                            ;
+; 6                                           ; 9                             ;
+; 7                                           ; 6                             ;
 ; 8                                           ; 4                             ;
-; 9                                           ; 11                            ;
-; 10                                          ; 23                            ;
-; 11                                          ; 23                            ;
-; 12                                          ; 10                            ;
-; 13                                          ; 11                            ;
-; 14                                          ; 13                            ;
-; 15                                          ; 15                            ;
+; 9                                           ; 4                             ;
+; 10                                          ; 24                            ;
+; 11                                          ; 16                            ;
+; 12                                          ; 11                            ;
+; 13                                          ; 6                             ;
+; 14                                          ; 15                            ;
+; 15                                          ; 19                            ;
 ; 16                                          ; 153                           ;
 +---------------------------------------------+-------------------------------+
 
@@ -1368,125 +1369,126 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.26) ; Number of LABs  (Total = 309) ;
+; LAB-wide Signals  (Average = 0.28) ; Number of LABs  (Total = 332) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 24                            ;
-; 1 Clock                            ; 31                            ;
-; 1 Clock enable                     ; 17                            ;
-; 1 Sync. load                       ; 1                             ;
-; 2 Clock enables                    ; 1                             ;
-; 2 Clocks                           ; 5                             ;
+; 1 Async. clear                     ; 26                            ;
+; 1 Clock                            ; 35                            ;
+; 1 Clock enable                     ; 22                            ;
+; 1 Sync. clear                      ; 2                             ;
+; 1 Sync. load                       ; 3                             ;
+; 2 Clocks                           ; 6                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 11.28) ; Number of LABs  (Total = 309) ;
+; Number of Signals Sourced  (Average = 10.47) ; Number of LABs  (Total = 332) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 28                            ;
-; 2                                            ; 25                            ;
-; 3                                            ; 16                            ;
-; 4                                            ; 14                            ;
-; 5                                            ; 13                            ;
-; 6                                            ; 12                            ;
-; 7                                            ; 8                             ;
-; 8                                            ; 4                             ;
-; 9                                            ; 11                            ;
-; 10                                           ; 7                             ;
-; 11                                           ; 3                             ;
-; 12                                           ; 3                             ;
+; 1                                            ; 43                            ;
+; 2                                            ; 27                            ;
+; 3                                            ; 17                            ;
+; 4                                            ; 10                            ;
+; 5                                            ; 20                            ;
+; 6                                            ; 19                            ;
+; 7                                            ; 14                            ;
+; 8                                            ; 3                             ;
+; 9                                            ; 4                             ;
+; 10                                           ; 8                             ;
+; 11                                           ; 5                             ;
+; 12                                           ; 2                             ;
 ; 13                                           ; 3                             ;
-; 14                                           ; 9                             ;
-; 15                                           ; 28                            ;
-; 16                                           ; 98                            ;
-; 17                                           ; 0                             ;
-; 18                                           ; 1                             ;
-; 19                                           ; 2                             ;
-; 20                                           ; 2                             ;
+; 14                                           ; 8                             ;
+; 15                                           ; 25                            ;
+; 16                                           ; 97                            ;
+; 17                                           ; 1                             ;
+; 18                                           ; 0                             ;
+; 19                                           ; 3                             ;
+; 20                                           ; 1                             ;
 ; 21                                           ; 0                             ;
-; 22                                           ; 1                             ;
-; 23                                           ; 4                             ;
+; 22                                           ; 4                             ;
+; 23                                           ; 3                             ;
 ; 24                                           ; 1                             ;
-; 25                                           ; 1                             ;
-; 26                                           ; 4                             ;
+; 25                                           ; 2                             ;
+; 26                                           ; 1                             ;
 ; 27                                           ; 3                             ;
 ; 28                                           ; 0                             ;
-; 29                                           ; 1                             ;
+; 29                                           ; 0                             ;
 ; 30                                           ; 4                             ;
 ; 31                                           ; 1                             ;
-; 32                                           ; 2                             ;
+; 32                                           ; 3                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 7.35) ; Number of LABs  (Total = 309) ;
+; Number of Signals Sourced Out  (Average = 7.02) ; Number of LABs  (Total = 332) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 77                            ;
-; 2                                               ; 34                            ;
-; 3                                               ; 17                            ;
-; 4                                               ; 11                            ;
-; 5                                               ; 9                             ;
-; 6                                               ; 4                             ;
+; 1                                               ; 87                            ;
+; 2                                               ; 48                            ;
+; 3                                               ; 19                            ;
+; 4                                               ; 6                             ;
+; 5                                               ; 6                             ;
+; 6                                               ; 6                             ;
 ; 7                                               ; 3                             ;
 ; 8                                               ; 14                            ;
-; 9                                               ; 10                            ;
-; 10                                              ; 5                             ;
-; 11                                              ; 12                            ;
+; 9                                               ; 11                            ;
+; 10                                              ; 3                             ;
+; 11                                              ; 14                            ;
 ; 12                                              ; 55                            ;
-; 13                                              ; 8                             ;
-; 14                                              ; 2                             ;
-; 15                                              ; 5                             ;
-; 16                                              ; 42                            ;
+; 13                                              ; 11                            ;
+; 14                                              ; 3                             ;
+; 15                                              ; 3                             ;
+; 16                                              ; 40                            ;
 ; 17                                              ; 1                             ;
+; 18                                              ; 2                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 17.02) ; Number of LABs  (Total = 309) ;
+; Number of Distinct Inputs  (Average = 16.21) ; Number of LABs  (Total = 332) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 1                             ;
-; 3                                            ; 4                             ;
-; 4                                            ; 17                            ;
-; 5                                            ; 7                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 6                             ;
+; 2                                            ; 4                             ;
+; 3                                            ; 7                             ;
+; 4                                            ; 27                            ;
+; 5                                            ; 3                             ;
+; 6                                            ; 7                             ;
+; 7                                            ; 8                             ;
+; 8                                            ; 9                             ;
 ; 9                                            ; 4                             ;
-; 10                                           ; 8                             ;
-; 11                                           ; 6                             ;
-; 12                                           ; 4                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 4                             ;
-; 15                                           ; 44                            ;
-; 16                                           ; 50                            ;
-; 17                                           ; 35                            ;
-; 18                                           ; 5                             ;
-; 19                                           ; 5                             ;
-; 20                                           ; 23                            ;
-; 21                                           ; 6                             ;
-; 22                                           ; 5                             ;
-; 23                                           ; 16                            ;
-; 24                                           ; 13                            ;
-; 25                                           ; 2                             ;
-; 26                                           ; 7                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 5                             ;
-; 29                                           ; 5                             ;
-; 30                                           ; 5                             ;
+; 10                                           ; 6                             ;
+; 11                                           ; 4                             ;
+; 12                                           ; 3                             ;
+; 13                                           ; 8                             ;
+; 14                                           ; 2                             ;
+; 15                                           ; 38                            ;
+; 16                                           ; 57                            ;
+; 17                                           ; 33                            ;
+; 18                                           ; 4                             ;
+; 19                                           ; 7                             ;
+; 20                                           ; 26                            ;
+; 21                                           ; 7                             ;
+; 22                                           ; 10                            ;
+; 23                                           ; 11                            ;
+; 24                                           ; 5                             ;
+; 25                                           ; 3                             ;
+; 26                                           ; 3                             ;
+; 27                                           ; 9                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 1                             ;
+; 30                                           ; 4                             ;
 ; 31                                           ; 4                             ;
-; 32                                           ; 5                             ;
-; 33                                           ; 0                             ;
+; 32                                           ; 10                            ;
+; 33                                           ; 2                             ;
 ; 34                                           ; 1                             ;
-; 35                                           ; 0                             ;
+; 35                                           ; 1                             ;
 ; 36                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
@@ -1645,34 +1647,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
 ; Source Clock(s)                                                                                             ; Destination Clock(s)                                   ; Delay Added in ns ;
 +-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]                                                        ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 25.5              ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]                                                        ; clkin                                                  ; 5.6               ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1],ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 5.6               ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]                                                        ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 17.1              ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1],ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 9.3               ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]                                                        ; clkin                                                  ; 6.1               ;
 +-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                             ;
-+----------------------------------------------------------------+------------------------------------------------------+-------------------+
-; Source Register                                                ; Destination Register                                 ; Delay Added in ns ;
-+----------------------------------------------------------------+------------------------------------------------------+-------------------+
-; ADXL345Handler:accelerometer|input_reg[14]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 5.825             ;
-; gameOver                                                       ; ScoreCounter:score|thousandsSecond[3]                ; 5.602             ;
-; ADXL345Handler:accelerometer|input_reg[10]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 5.594             ;
-; ADXL345Handler:accelerometer|input_reg[8]                      ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 5.553             ;
-; ADXL345Handler:accelerometer|input_reg[12]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 5.531             ;
-; ADXL345Handler:accelerometer|spirst                            ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 5.372             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[15] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.897             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[14] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.897             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[9]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.897             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[3]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.867             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[11] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.867             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[10] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.867             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[12] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.825             ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[8]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI ; 1.825             ;
-+----------------------------------------------------------------+------------------------------------------------------+-------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                       ;
++----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
+; Source Register                                                ; Destination Register                                           ; Delay Added in ns ;
++----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
+; gameOver                                                       ; ScoreCounter:score|thousandsSecond[3]                          ; 6.093             ;
+; ADXL345Handler:accelerometer|input_reg[8]                      ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.614             ;
+; ADXL345Handler:accelerometer|input_reg[12]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.614             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[12] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.614             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[8]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.614             ;
+; ADXL345Handler:accelerometer|spirst                            ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[15] ; 5.213             ;
+; ADXL345Handler:accelerometer|input_reg[14]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.209             ;
+; ADXL345Handler:accelerometer|input_reg[10]                     ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 5.194             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[15] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.841             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[14] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.841             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[9]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.841             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[3]  ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.836             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[11] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.836             ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[10] ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI           ; 1.836             ;
++----------------------------------------------------------------+----------------------------------------------------------------+-------------------+
 Note: This table only shows the top 14 path(s) that have the largest delay added for hold.
 
 
@@ -1737,7 +1739,7 @@ Info (176353): Automatically promoted node ADXL345Handler:accelerometer|VeryBadS
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1746,7 +1748,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:07
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 14% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
+    Info (170196): Router estimated peak interconnect usage is 17% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
@@ -1755,7 +1757,7 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (169177): 4 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin rst uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 5
     Info (169178): Pin clkin uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 3
@@ -1763,10 +1765,10 @@ Warning (169177): 4 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin MISO uses I/O standard 3.3-V LVTTL at V12 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 4
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/output_files/EECS3201Final.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6269 megabytes
-    Info: Processing ended: Fri Nov 19 01:22:37 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Peak virtual memory: 6271 megabytes
+    Info: Processing ended: Fri Nov 19 17:17:00 2021
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:54
 
 
 +----------------------------+
