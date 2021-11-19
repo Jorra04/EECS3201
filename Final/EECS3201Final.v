@@ -14,7 +14,7 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 	output spiclk;			//ADXL345 SPIclk
 	output chipselect;	//ADXL345 CS
 	reg getData;			//pulse to ADXL345Handler to issue read commands to the adxl345
-	reg isPaused;	 		//Reg to see if the game is paused.
+	reg startGame;	 		//Reg to see when game should start.
 	
 	
 	//outputs for score counter
@@ -104,9 +104,13 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 	end
 	
 	//Update pausing
-	always @(negedge pause)
+	always @(negedge pause or negedge rst)
 	begin
-		isPaused <= ~isPaused;
+		if(~rst)
+			startGame <= 1'b0;
+		else
+			startGame <= 1'b1;
+		
 	end
 	
 	//note this is not the proper way to define modules should be changed
@@ -115,7 +119,24 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 	//lfsr module 
 	lfsr rng(clk25M, rst, rng_state, rng_out);
 	//score module
-	ScoreCounter score(clkin, rst, gameOver || isPaused, hex01, hex02, hex03, hex04);
+	ScoreCounter score(clkin, rst, gameOver || !startGame, hex01, hex02, hex03, hex04);
+
+	integer CLOUD_START_x = 35;
+	integer CLOUD_END_x = 200;
+	integer CLOUD_OFFSET_x = 10;
+	integer CLOUD_OFFSET_y = 2;
+	integer CLOUD_START_y = 115;
+	integer CLOUD_END_y = 120;
+	
+	integer CLOUD2_START_x = 435;
+	integer CLOUD2_END_x = 600;
+	integer CLOUD2_START_y = 220;
+	integer CLOUD2_END_y = 225;
+	reg reverseMovement;
+	
+	integer cloudMovement;
+	integer cloudMovement2;
+	
 	
 	always @(posedge clk25M or negedge rst) begin
 		if(~rst)begin
@@ -133,12 +154,56 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 			gameOver <= 1'b0;
 			rng_counter <= 0;
 			redTrue <= 4'b1111;
-			alternateColour <= 1'b0;
+			alternateColour <= 1'b0;			
 
 		end else begin 
 			//if x and y are within the draw area draw some pixels
 			if(de)begin	
-				if(!gameOver) begin
+				if(!startGame) begin
+				
+					
+					integer i;
+					integer CLOUD_OFFSET_y_count = 1;
+					if((0 <= y && y < 350)) begin
+						r <= 4'b1000;
+						g <= 4'b1010;
+						b <= 4'b1110;
+						
+						
+						for(i = 0; i < 15; i = i + 1) begin
+						
+							if((CLOUD_START_y - i*CLOUD_OFFSET_y <= y && y <= CLOUD_END_y + i*CLOUD_OFFSET_y) 
+								&& (CLOUD_START_x  + cloudMovement + i*CLOUD_OFFSET_x <= x && x < CLOUD_END_x +cloudMovement - i*CLOUD_OFFSET_x)) begin
+							
+								r <= 4'b1111;
+								g <= 4'b1111;
+								b <= 4'b1111;
+	
+							end
+						end
+						
+						
+						for(i = 0; i < 15; i = i + 1) begin
+						
+							if((CLOUD2_START_y - i*CLOUD_OFFSET_y <= y && y <= CLOUD2_END_y + i*CLOUD_OFFSET_y) 
+								&& (CLOUD2_START_x  + cloudMovement2 + i*CLOUD_OFFSET_x <= x && x < CLOUD2_END_x + cloudMovement2 - i*CLOUD_OFFSET_x)) begin
+							
+								r <= 4'b1111;
+								g <= 4'b1111;
+								b <= 4'b1111;
+	
+							end
+						end
+	
+
+						
+					end else begin
+					
+						r <= 4'b0111;
+						g <= 4'b1110;
+						b <= 4'b0000;
+					end
+				end else if(!gameOver) begin
 					//Check if the player object is within the target object. ???????????????	 
 					if((playerx < targetx) || (playery < targety) || (playerx + 32) > (targetx + targetsize) || (playery + 32) > (targety + targetsize))begin
 						gameOver <= 1'b1;
@@ -407,7 +472,7 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 			end
 			
 			//update playerx and playery
-			if(y == 520)begin
+			if(y == 520 && startGame)begin
 				playerx <= dataXout[8] ? 303 + ((((tempx > 127) ? 127 : tempx) << 1) + (((tempx > 127) ? 127 : tempx) >> 2)) : 
 					303 - ((((dataXout[7:0] > 127) ? 127 : dataXout[7:0]) << 1) + (((dataXout[7:0] > 127) ? 127 : dataXout[7:0]) >> 2));
 					
@@ -419,8 +484,25 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 				x <= 0;
 				if(y == SCREEN) begin 
 					y <= 0;
-					if(counter == 60)begin
+					if(counter % 6 == 0)begin
+						integer movement = 1;
+						integer movement2 = 1;
+						if(CLOUD_END_x + cloudMovement > 639 || CLOUD_START_x + cloudMovement < 1 )begin
+							movement = movement * -1;
+						end
+						
+						if(CLOUD2_END_x + cloudMovement2 > 639 || CLOUD2_START_x + cloudMovement2 < 1 )begin
+							movement2 = movement2 * -1;
+						end
+						
+						
+						cloudMovement <= cloudMovement + movement;
+						cloudMovement2 <= cloudMovement2 + movement2;
+					
+						
+					end if(counter == 60)begin
 						counter <= 0;
+						
 						redTrue <= ~redTrue;
 						targetsize <= targetsize - 1'b1;
 						rng_counter <= 0;
@@ -428,11 +510,11 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 						counter <= counter + 1'b1;
 						//this needs to be improved
 						//x limiter
-						if ((temptargetx < (640 - targetsize)) && (temptargetx > 0))  
+						if (startGame && (temptargetx < (640 - targetsize)) && (temptargetx > 0))  
 							targetx <= temptargetx;
 						
 						//y limiter
-						if ((temptargety < (480 - targetsize)) && (temptargety > 0))  
+						if (startGame && (temptargety < (480 - targetsize)) && (temptargety > 0))  
 							targety <= temptargety;
 						
 					end

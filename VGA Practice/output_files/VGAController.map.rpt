@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGAController
-Fri Nov 12 20:53:00 2021
+Thu Nov 18 17:24:32 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -13,11 +13,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +43,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 12 20:53:00 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 18 17:24:32 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; VGAController                                             ;
 ; Top-level Entity Name              ; VGAController                                             ;
 ; Family                             ; MAX 10                                                    ;
-; Total logic elements               ; 49                                                        ;
-;     Total combinational functions  ; 48                                                        ;
-;     Dedicated logic registers      ; 23                                                        ;
-; Total registers                    ; 23                                                        ;
+; Total logic elements               ; 65                                                        ;
+;     Total combinational functions  ; 65                                                        ;
+;     Dedicated logic registers      ; 21                                                        ;
+; Total registers                    ; 21                                                        ;
 ; Total pins                         ; 15                                                        ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0                                                         ;
@@ -162,51 +161,51 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
-; VGAController.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v ;         ;
-; clockDivider.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/clockDivider.v  ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
+; VGAController.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v      ;         ;
+; clockDivider.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/clockDivider.v       ;         ;
+; tinyfpgarom20x15.txt             ; yes             ; Auto-Found File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/tinyfpgarom20x15.txt ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimated Total logic elements              ; 49                           ;
-;                                             ;                              ;
-; Total combinational functions               ; 48                           ;
-; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 19                           ;
-;     -- 3 input functions                    ; 4                            ;
-;     -- <=2 input functions                  ; 25                           ;
-;                                             ;                              ;
-; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 30                           ;
-;     -- arithmetic mode                      ; 18                           ;
-;                                             ;                              ;
-; Total registers                             ; 23                           ;
-;     -- Dedicated logic registers            ; 23                           ;
-;     -- I/O registers                        ; 0                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 15                           ;
-;                                             ;                              ;
-; Embedded Multiplier 9-bit elements          ; 0                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; clockDivider:divider1|clkout ;
-; Maximum fan-out                             ; 21                           ;
-; Total fan-out                               ; 239                          ;
-; Average fan-out                             ; 2.37                         ;
-+---------------------------------------------+------------------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 65           ;
+;                                             ;              ;
+; Total combinational functions               ; 65           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 39           ;
+;     -- 3 input functions                    ; 2            ;
+;     -- <=2 input functions                  ; 24           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 47           ;
+;     -- arithmetic mode                      ; 18           ;
+;                                             ;              ;
+; Total registers                             ; 21           ;
+;     -- Dedicated logic registers            ; 21           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 15           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; counter_y[8] ;
+; Maximum fan-out                             ; 22           ;
+; Total fan-out                               ; 299          ;
+; Average fan-out                             ; 2.58         ;
++---------------------------------------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -214,27 +213,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                  ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+---------------+--------------+
-; |VGAController             ; 48 (47)             ; 23 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |VGAController                       ; VGAController ; work         ;
+; |VGAController             ; 65 (64)             ; 21 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |VGAController                       ; VGAController ; work         ;
 ;    |clockDivider:divider1| ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |VGAController|clockDivider:divider1 ; clockDivider  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------+
-; Registers Removed During Synthesis                              ;
-+----------------------------------------+------------------------+
-; Register name                          ; Reason for Removal     ;
-+----------------------------------------+------------------------+
-; r_green[0]                             ; Merged with r_green[1] ;
-; r_green[1]                             ; Merged with r_green[2] ;
-; r_green[2]                             ; Merged with r_green[3] ;
-; r_green[3]                             ; Merged with r_red[0]   ;
-; r_red[0]                               ; Merged with r_red[1]   ;
-; r_red[1]                               ; Merged with r_red[2]   ;
-; r_red[2]                               ; Merged with r_red[3]   ;
-; r_blue[1..3]                           ; Merged with r_blue[0]  ;
-; Total Number of Removed Registers = 10 ;                        ;
-+----------------------------------------+------------------------+
 
 
 +------------------------------------------------------+
@@ -242,7 +224,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 23    ;
+; Total registers                              ; 21    ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -258,21 +240,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 15                          ;
-; cycloneiii_ff         ; 23                          ;
+; cycloneiii_ff         ; 21                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 49                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 68                          ;
 ;     arith             ; 18                          ;
 ;         2 data inputs ; 18                          ;
-;     normal            ; 31                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 19                          ;
+;     normal            ; 50                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 39                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.84                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -291,7 +274,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Fri Nov 12 20:52:54 2021
+    Info: Processing started: Thu Nov 18 17:24:26 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGAController -c VGAController
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -300,24 +283,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file vgacont
 Info (12021): Found 1 design units, including 1 entities, in source file clockdivider.v
     Info (12023): Found entity 1: clockDivider File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/clockDivider.v Line: 1
 Info (12127): Elaborating entity "VGAController" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at VGAController.v(22): object "a" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 22
-Warning (10036): Verilog HDL or VHDL warning at VGAController.v(51): object "reset" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 51
-Warning (10230): Verilog HDL assignment warning at VGAController.v(65): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 65
-Warning (10230): Verilog HDL assignment warning at VGAController.v(75): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 75
-Warning (10230): Verilog HDL assignment warning at VGAController.v(84): truncated value with size 32 to match size of target (1) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 84
-Warning (10230): Verilog HDL assignment warning at VGAController.v(85): truncated value with size 32 to match size of target (1) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 85
-Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:divider1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 57
+Warning (10036): Verilog HDL or VHDL warning at VGAController.v(17): object "r_red" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 17
+Warning (10036): Verilog HDL or VHDL warning at VGAController.v(18): object "r_blue" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 18
+Warning (10036): Verilog HDL or VHDL warning at VGAController.v(19): object "r_green" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 19
+Warning (10036): Verilog HDL or VHDL warning at VGAController.v(25): object "reset" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 25
+Warning (10036): Verilog HDL or VHDL warning at VGAController.v(29): object "counterYMax" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 29
+Warning (10230): Verilog HDL assignment warning at VGAController.v(42): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 42
+Warning (10230): Verilog HDL assignment warning at VGAController.v(52): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 52
+Warning (10230): Verilog HDL assignment warning at VGAController.v(71): truncated value with size 32 to match size of target (1) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 71
+Warning (10230): Verilog HDL assignment warning at VGAController.v(72): truncated value with size 32 to match size of target (1) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 72
+Warning (10030): Net "imageRom.data_a" at VGAController.v(21) has no driver or initial value, using a default initial value '0' File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 21
+Warning (10030): Net "imageRom.waddr_a" at VGAController.v(21) has no driver or initial value, using a default initial value '0' File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 21
+Warning (10030): Net "imageRom.we_a" at VGAController.v(21) has no driver or initial value, using a default initial value '0' File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 21
+Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:divider1" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 34
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (15) in the Memory Initialization File "C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/db/VGAController.ram0_VGAController_2f0db6f8.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276013): RAM logic "imageRom" is uninferred because MIF is not supported for the selected family File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 21
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o_red[1]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 10
+    Warning (13410): Pin "o_red[2]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 10
+    Warning (13410): Pin "o_red[3]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 10
+    Warning (13410): Pin "o_blue[1]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 11
+    Warning (13410): Pin "o_blue[2]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 11
+    Warning (13410): Pin "o_blue[3]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 11
+    Warning (13410): Pin "o_green[1]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 13
+    Warning (13410): Pin "o_green[2]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 13
+    Warning (13410): Pin "o_green[3]" is stuck at VCC File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/VGA Practice/VGAController.v Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Fri Nov 12 20:53:00 2021
+    Info (21061): Implemented 65 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Thu Nov 18 17:24:32 2021
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:15
 
 

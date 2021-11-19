@@ -1,7 +1,7 @@
 |EECS3201Final
 clkin => clkin.IN2
 rst => rst.IN3
-pause => isPaused.CLK
+pause => startGame.CLK
 MISO => MISO.IN1
 hsync <= hsync.DB_MAX_OUTPUT_PORT_TYPE
 vsync <= vsync.DB_MAX_OUTPUT_PORT_TYPE

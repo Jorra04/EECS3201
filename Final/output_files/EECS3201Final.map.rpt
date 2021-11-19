@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EECS3201Final
-Sun Nov 14 17:33:10 2021
+Fri Nov 19 01:22:17 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -21,13 +21,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Parameter Settings for User Entity Instance: Top-level Entity: |EECS3201Final
  15. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
- 16. altpll Parameter Settings by Entity Instance
- 17. Port Connectivity Checks: "lfsr:rng"
- 18. Port Connectivity Checks: "ADXL345Handler:accelerometer|VeryBadSPI:adxl345"
- 19. Port Connectivity Checks: "pll:pll_inst"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+ 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 17. altpll Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "lfsr:rng"
+ 19. Port Connectivity Checks: "ADXL345Handler:accelerometer|VeryBadSPI:adxl345"
+ 20. Port Connectivity Checks: "pll:pll_inst"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -54,15 +56,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 14 17:33:10 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 19 01:22:17 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3201Final                                             ;
 ; Top-level Entity Name              ; EECS3201Final                                             ;
 ; Family                             ; MAX 10                                                    ;
-; Total logic elements               ; 798                                                       ;
-;     Total combinational functions  ; 728                                                       ;
-;     Dedicated logic registers      ; 230                                                       ;
-; Total registers                    ; 230                                                       ;
+; Total logic elements               ; 3,903                                                     ;
+;     Total combinational functions  ; 3,832                                                     ;
+;     Dedicated logic registers      ; 298                                                       ;
+; Total registers                    ; 298                                                       ;
 ; Total pins                         ; 49                                                        ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0                                                         ;
@@ -167,90 +169,108 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; EECS3201Final.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v  ;         ;
-; ADXL345Handler.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ADXL345Handler.v ;         ;
-; VeryBadSPI.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/VeryBadSPI.v     ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/pll.v            ;         ;
-; lfsr.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/lfsr.v           ;         ;
-; ScoreCounter.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v   ;         ;
-; Lab2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/Lab2.v           ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf               ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc           ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc          ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc        ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc        ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/pll_altpll.v  ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; EECS3201Final.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v            ;         ;
+; ADXL345Handler.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ADXL345Handler.v           ;         ;
+; VeryBadSPI.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/VeryBadSPI.v               ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/pll.v                      ;         ;
+; lfsr.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/lfsr.v                     ;         ;
+; ScoreCounter.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v             ;         ;
+; Lab2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/Lab2.v                     ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                         ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                     ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                    ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                  ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                  ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/pll_altpll.v            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                     ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                    ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                ;         ;
+; db/lpm_divide_9kl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/lpm_divide_9kl.tdf      ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/sign_div_unsign_8kh.tdf ;         ;
+; db/alt_u_div_qee.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/alt_u_div_qee.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/add_sub_u3c.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 798       ;
-;                                             ;           ;
-; Total combinational functions               ; 728       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 269       ;
-;     -- 3 input functions                    ; 223       ;
-;     -- <=2 input functions                  ; 236       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 425       ;
-;     -- arithmetic mode                      ; 303       ;
-;                                             ;           ;
-; Total registers                             ; 230       ;
-;     -- Dedicated logic registers            ; 230       ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 49        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Total PLLs                                  ; 1         ;
-;     -- PLLs                                 ; 1         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 142       ;
-; Total fan-out                               ; 3065      ;
-; Average fan-out                             ; 2.90      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                   ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                           ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 3,903                                                                           ;
+;                                             ;                                                                                 ;
+; Total combinational functions               ; 3832                                                                            ;
+; Logic element usage by number of LUT inputs ;                                                                                 ;
+;     -- 4 input functions                    ; 800                                                                             ;
+;     -- 3 input functions                    ; 872                                                                             ;
+;     -- <=2 input functions                  ; 2160                                                                            ;
+;                                             ;                                                                                 ;
+; Logic elements by mode                      ;                                                                                 ;
+;     -- normal mode                          ; 1162                                                                            ;
+;     -- arithmetic mode                      ; 2670                                                                            ;
+;                                             ;                                                                                 ;
+; Total registers                             ; 298                                                                             ;
+;     -- Dedicated logic registers            ; 298                                                                             ;
+;     -- I/O registers                        ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; I/O pins                                    ; 49                                                                              ;
+;                                             ;                                                                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; Total PLLs                                  ; 1                                                                               ;
+;     -- PLLs                                 ; 1                                                                               ;
+;                                             ;                                                                                 ;
+; Maximum fan-out node                        ; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
+; Maximum fan-out                             ; 203                                                                             ;
+; Total fan-out                               ; 11127                                                                           ;
+; Average fan-out                             ; 2.63                                                                            ;
++---------------------------------------------+---------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                           ; Entity Name    ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------+----------------+--------------+
-; |EECS3201Final                       ; 728 (549)           ; 230 (90)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 49   ; 0            ; 0          ; |EECS3201Final                                                                ; EECS3201Final  ; work         ;
-;    |ADXL345Handler:accelerometer|    ; 53 (47)             ; 84 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer                                   ; ADXL345Handler ; work         ;
-;       |VeryBadSPI:adxl345|           ; 6 (6)               ; 48 (48)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer|VeryBadSPI:adxl345                ; VeryBadSPI     ; work         ;
-;    |ScoreCounter:score|              ; 124 (95)            ; 48 (48)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score                                             ; ScoreCounter   ; work         ;
-;       |Lab2:displayHex01|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex01                           ; Lab2           ; work         ;
-;       |Lab2:displayHex02|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex02                           ; Lab2           ; work         ;
-;       |Lab2:displayHex03|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex03                           ; Lab2           ; work         ;
-;       |Lab2:displayHex04|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex04                           ; Lab2           ; work         ;
-;    |lfsr:rng|                        ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lfsr:rng                                                       ; lfsr           ; work         ;
-;    |pll:pll_inst|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst                                                   ; pll            ; work         ;
-;       |altpll:altpll_component|      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst|altpll:altpll_component                           ; altpll         ; work         ;
-;          |pll_altpll:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated ; pll_altpll     ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------+----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                            ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |EECS3201Final                         ; 3832 (3620)         ; 298 (158)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 49   ; 0            ; 0          ; |EECS3201Final                                                                                                 ; EECS3201Final       ; work         ;
+;    |ADXL345Handler:accelerometer|      ; 53 (47)             ; 84 (36)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer                                                                    ; ADXL345Handler      ; work         ;
+;       |VeryBadSPI:adxl345|             ; 6 (6)               ; 48 (48)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ADXL345Handler:accelerometer|VeryBadSPI:adxl345                                                 ; VeryBadSPI          ; work         ;
+;    |ScoreCounter:score|                ; 124 (95)            ; 48 (48)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score                                                                              ; ScoreCounter        ; work         ;
+;       |Lab2:displayHex01|              ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex01                                                            ; Lab2                ; work         ;
+;       |Lab2:displayHex02|              ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex02                                                            ; Lab2                ; work         ;
+;       |Lab2:displayHex03|              ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex03                                                            ; Lab2                ; work         ;
+;       |Lab2:displayHex04|              ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|ScoreCounter:score|Lab2:displayHex04                                                            ; Lab2                ; work         ;
+;    |lfsr:rng|                          ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lfsr:rng                                                                                        ; lfsr                ; work         ;
+;    |lpm_divide:Mod0|                   ; 33 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_9kl:auto_generated|  ; 33 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lpm_divide:Mod0|lpm_divide_9kl:auto_generated                                                   ; lpm_divide_9kl      ; work         ;
+;          |sign_div_unsign_8kh:divider| ; 33 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lpm_divide:Mod0|lpm_divide_9kl:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;             |alt_u_div_qee:divider|    ; 33 (33)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|lpm_divide:Mod0|lpm_divide_9kl:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_qee:divider ; alt_u_div_qee       ; work         ;
+;    |pll:pll_inst|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst                                                                                    ; pll                 ; work         ;
+;       |altpll:altpll_component|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst|altpll:altpll_component                                                            ; altpll              ; work         ;
+;          |pll_altpll:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EECS3201Final|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated                                  ; pll_altpll          ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -272,19 +292,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; targetx[8,9]                                                     ; Stuck at GND due to stuck port data_in                 ;
 ; targety[8,9]                                                     ; Stuck at GND due to stuck port data_in                 ;
 ; r[2]~reg0                                                        ; Merged with r[0]~reg0                                  ;
-; r[3]~reg0                                                        ; Merged with r[0]~reg0                                  ;
-; g[3]~reg0                                                        ; Merged with b[3]~reg0                                  ;
 ; redTrue[1..3]                                                    ; Merged with redTrue[0]                                 ;
 ; ADXL345Handler:accelerometer|input_reg[1,2,4..7]                 ; Merged with ADXL345Handler:accelerometer|input_reg[0]  ;
 ; ADXL345Handler:accelerometer|input_reg[3,11]                     ; Merged with ADXL345Handler:accelerometer|input_reg[10] ;
 ; ADXL345Handler:accelerometer|input_reg[9,15]                     ; Merged with ADXL345Handler:accelerometer|input_reg[14] ;
-; g[1]~reg0                                                        ; Stuck at GND due to stuck port data_in                 ;
+; movement[0]                                                      ; Stuck at VCC due to stuck port data_in                 ;
+; movement2[0]                                                     ; Stuck at VCC due to stuck port data_in                 ;
 ; redTrue[0]                                                       ; Merged with targetsize[0]                              ;
 ; ADXL345Handler:accelerometer|input_reg[0]                        ; Stuck at GND due to stuck port data_in                 ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[0..2] ; Lost fanout                                            ;
 ; ADXL345Handler:accelerometer|input_reg[13]                       ; Stuck at VCC due to stuck port data_in                 ;
+; cloudMovement[0]                                                 ; Merged with cloudMovement2[0]                          ;
+; movement[1..9,11..31]                                            ; Merged with movement[10]                               ;
+; movement2[1..9,11..31]                                           ; Merged with movement2[10]                              ;
 ; playery[9]                                                       ; Stuck at GND due to stuck port data_in                 ;
-; Total Number of Removed Registers = 29                           ;                                                        ;
+; Total Number of Removed Registers = 89                           ;                                                        ;
 +------------------------------------------------------------------+--------------------------------------------------------+
 
 
@@ -296,8 +318,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ADXL345Handler:accelerometer|input_reg[0] ; Stuck at GND              ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[0], ;
 ;                                           ; due to stuck port data_in ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[1], ;
 ;                                           ;                           ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[2]  ;
-; playery[0]                                ; Stuck at VCC              ; g[1]~reg0                                                      ;
-;                                           ; due to stuck port data_in ;                                                                ;
 +-------------------------------------------+---------------------------+----------------------------------------------------------------+
 
 
@@ -306,12 +326,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 230   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 15    ;
-; Number of registers using Asynchronous Clear ; 165   ;
+; Total registers                              ; 298   ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 17    ;
+; Number of registers using Asynchronous Clear ; 166   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 141   ;
+; Number of registers using Clock Enable       ; 209   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -328,26 +348,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; targetsize[3]                                                  ; 5       ;
 ; targetsize[2]                                                  ; 5       ;
 ; targetsize[1]                                                  ; 5       ;
-; playerx[5]                                                     ; 9       ;
-; playerx[8]                                                     ; 4       ;
 ; playery[6]                                                     ; 6       ;
 ; playery[7]                                                     ; 5       ;
 ; playery[4]                                                     ; 4       ;
 ; playery[3]                                                     ; 4       ;
 ; playery[2]                                                     ; 4       ;
 ; playery[1]                                                     ; 4       ;
+; playerx[8]                                                     ; 5       ;
+; playerx[5]                                                     ; 9       ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout         ; 49      ;
 ; ADXL345Handler:accelerometer|CS                                ; 4       ;
-; targetsize[0]                                                  ; 9       ;
+; targety[6]                                                     ; 4       ;
+; targety[5]                                                     ; 4       ;
+; targety[4]                                                     ; 4       ;
 ; targetx[7]                                                     ; 5       ;
 ; targetx[6]                                                     ; 5       ;
+; targetsize[0]                                                  ; 9       ;
 ; playerx[3]                                                     ; 5       ;
 ; playerx[2]                                                     ; 5       ;
 ; playerx[1]                                                     ; 5       ;
 ; playerx[0]                                                     ; 5       ;
-; targety[6]                                                     ; 4       ;
-; targety[5]                                                     ; 4       ;
-; targety[4]                                                     ; 4       ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|MOSI_SHIFT[15] ; 2       ;
 ; ADXL345Handler:accelerometer|spirst                            ; 16      ;
 ; lfsr:rng|q[0]                                                  ; 8       ;
@@ -360,14 +380,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ScoreCounter:score|hundredsSecond[1]       ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |EECS3201Final|rng_counter[6]                             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |EECS3201Final|g[0]~reg0                                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ScoreCounter:score|tensSecond[3]           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |EECS3201Final|g[2]~reg0                                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ScoreCounter:score|hundredsSecond[0]       ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |EECS3201Final|rng_counter[5]                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ScoreCounter:score|tensSecond[0]           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |EECS3201Final|g[3]~reg0                                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |EECS3201Final|b[0]~reg0                                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |EECS3201Final|r[3]~reg0                                  ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |EECS3201Final|ScoreCounter:score|onesSecond[1]           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ADXL345Handler:accelerometer|input_reg[10] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |EECS3201Final|playery[2]                                 ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |EECS3201Final|b[1]~reg0                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |EECS3201Final|ADXL345Handler:accelerometer|input_reg[14] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |EECS3201Final|playery[4]                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
@@ -776,6 +798,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 6              ; Untyped                ;
+; LPM_WIDTHD             ; 3              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_9kl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                         ;
 +-------------------------------+--------------------------------------+
@@ -827,26 +872,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 49                          ;
-; cycloneiii_ff         ; 230                         ;
-;     CLR               ; 55                          ;
-;     ENA               ; 31                          ;
+; cycloneiii_ff         ; 298                         ;
+;     CLR               ; 56                          ;
+;     ENA               ; 97                          ;
 ;     ENA CLR           ; 95                          ;
 ;     ENA CLR SLD       ; 15                          ;
-;     plain             ; 34                          ;
-; cycloneiii_lcell_comb ; 730                         ;
-;     arith             ; 303                         ;
-;         2 data inputs ; 128                         ;
-;         3 data inputs ; 175                         ;
-;     normal            ; 427                         ;
-;         0 data inputs ; 10                          ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 76                          ;
-;         3 data inputs ; 48                          ;
-;         4 data inputs ; 269                         ;
+;     ENA SCLR SLD      ; 2                           ;
+;     plain             ; 33                          ;
+; cycloneiii_lcell_comb ; 3834                        ;
+;     arith             ; 2670                        ;
+;         2 data inputs ; 1886                        ;
+;         3 data inputs ; 784                         ;
+;     normal            ; 1164                        ;
+;         0 data inputs ; 14                          ;
+;         1 data inputs ; 84                          ;
+;         2 data inputs ; 178                         ;
+;         3 data inputs ; 88                          ;
+;         4 data inputs ; 800                         ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 4.87                        ;
+; Max LUT depth         ; 15.10                       ;
+; Average LUT depth     ; 10.72                       ;
 +-----------------------+-----------------------------+
 
 
@@ -855,7 +901,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -865,7 +911,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Nov 14 17:33:03 2021
+    Info: Processing started: Fri Nov 19 01:22:06 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EECS3201Final -c EECS3201Final
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -887,13 +933,14 @@ Warning (10236): Verilog HDL Implicit Net warning at EECS3201Final.v(58): create
 Warning (10236): Verilog HDL Implicit Net warning at EECS3201Final.v(62): created implicit net for "locked_sig" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 62
 Info (12127): Elaborating entity "EECS3201Final" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at EECS3201Final.v(45): object "alternateColour" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 45
+Warning (10036): Verilog HDL or VHDL warning at EECS3201Final.v(166): object "CLOUD_OFFSET_y_count" assigned a value but never read File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 166
 Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(28): truncated value with size 10 to match size of target (8) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 28
 Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(29): truncated value with size 10 to match size of target (8) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 29
 Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(30): truncated value with size 10 to match size of target (8) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 30
-Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(398): truncated value with size 32 to match size of target (9) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 398
-Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(411): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 411
-Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(414): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 414
-Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(443): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 443
+Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(463): truncated value with size 32 to match size of target (9) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 463
+Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(476): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 476
+Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(479): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 479
+Warning (10230): Verilog HDL assignment warning at EECS3201Final.v(525): truncated value with size 32 to match size of target (10) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 525
 Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 63
 Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/pll.v Line: 108
 Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/pll.v Line: 108
@@ -960,34 +1007,57 @@ Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" w
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
     Info (12023): Found entity 1: pll_altpll File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/pll_altpll.v Line: 31
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "ADXL345Handler" for hierarchy "ADXL345Handler:accelerometer" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 114
+Info (12128): Elaborating entity "ADXL345Handler" for hierarchy "ADXL345Handler:accelerometer" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 118
 Warning (10230): Verilog HDL assignment warning at ADXL345Handler.v(32): truncated value with size 32 to match size of target (11) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ADXL345Handler.v Line: 32
 Warning (10230): Verilog HDL assignment warning at ADXL345Handler.v(58): truncated value with size 32 to match size of target (11) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ADXL345Handler.v Line: 58
 Info (12128): Elaborating entity "VeryBadSPI" for hierarchy "ADXL345Handler:accelerometer|VeryBadSPI:adxl345" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ADXL345Handler.v Line: 19
-Info (12128): Elaborating entity "lfsr" for hierarchy "lfsr:rng" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 116
-Info (12128): Elaborating entity "ScoreCounter" for hierarchy "ScoreCounter:score" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 118
+Info (12128): Elaborating entity "lfsr" for hierarchy "lfsr:rng" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 120
+Info (12128): Elaborating entity "ScoreCounter" for hierarchy "ScoreCounter:score" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 122
 Warning (10230): Verilog HDL assignment warning at ScoreCounter.v(38): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v Line: 38
 Warning (10230): Verilog HDL assignment warning at ScoreCounter.v(43): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v Line: 43
 Warning (10230): Verilog HDL assignment warning at ScoreCounter.v(51): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v Line: 51
 Warning (10230): Verilog HDL assignment warning at ScoreCounter.v(54): truncated value with size 32 to match size of target (4) File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v Line: 54
 Info (12128): Elaborating entity "Lab2" for hierarchy "ScoreCounter:score|Lab2:displayHex01" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/ScoreCounter.v Line: 62
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 487
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 487
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 487
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9kl.tdf
+    Info (12023): Found entity 1: lpm_divide_9kl File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/lpm_divide_9kl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_qee.tdf
+    Info (12023): Found entity 1: alt_u_div_qee File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/alt_u_div_qee.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/db/add_sub_u3c.tdf Line: 23
 Info (13000): Registers with preset signals will power-up high File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/VeryBadSPI.v Line: 7
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "g[1]" is stuck at GND File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 140
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/output_files/EECS3201Final.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 861 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3969 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 45 output pins
-    Info (21061): Implemented 811 logic cells
+    Info (21061): Implemented 3919 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Sun Nov 14 17:33:10 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Fri Nov 19 01:22:17 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/output_files/EECS3201Final.map.smsg.
 
 

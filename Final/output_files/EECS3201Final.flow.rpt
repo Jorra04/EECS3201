@@ -1,5 +1,5 @@
 Flow report for EECS3201Final
-Sun Nov 14 17:33:31 2021
+Fri Nov 19 01:22:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 14 17:33:31 2021                     ;
+; Flow Status                        ; Successful - Fri Nov 19 01:22:47 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3201Final                                             ;
 ; Top-level Entity Name              ; EECS3201Final                                             ;
 ; Family                             ; MAX 10                                                    ;
 ; Device                             ; 10M50DAF484C7G                                            ;
 ; Timing Models                      ; Final                                                     ;
-; Total logic elements               ; 790 / 49,760 ( 2 % )                                      ;
-;     Total combinational functions  ; 729 / 49,760 ( 1 % )                                      ;
-;     Dedicated logic registers      ; 230 / 49,760 ( < 1 % )                                    ;
-; Total registers                    ; 230                                                       ;
+; Total logic elements               ; 3,890 / 49,760 ( 8 % )                                    ;
+;     Total combinational functions  ; 3,834 / 49,760 ( 8 % )                                    ;
+;     Dedicated logic registers      ; 298 / 49,760 ( < 1 % )                                    ;
+; Total registers                    ; 298                                                       ;
 ; Total pins                         ; 49 / 360 ( 14 % )                                         ;
 ; Total virtual pins                 ; 0                                                         ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                                     ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/14/2021 17:33:03 ;
+; Start date & time ; 11/19/2021 01:22:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; EECS3201Final       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 91764315442.163692918311692            ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 49410867774998.163730292602840         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -102,12 +102,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4829 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:11     ; 1.2                     ; 6235 MB             ; 00:00:24                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4690 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.5                     ; 4928 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:45                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4851 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:19     ; 1.6                     ; 6269 MB             ; 00:00:52                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 2.8                     ; 4950 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

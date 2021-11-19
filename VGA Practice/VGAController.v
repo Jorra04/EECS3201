@@ -17,39 +17,16 @@ module VGAController(
 	reg [3:0] r_red = 0;
 	reg [3:0] r_blue = 0;
 	reg [3:0] r_green = 0;
-	
-	
-	reg[14:0]a[19:0];
 
-	always @(*)
-	begin
-		a[0] = 15'b111110000000000;
-		a[1] = 15'b000010000000000;
-		a[2] = 15'b000010000000000;
-		a[3] = 15'b000011110000000;
-		a[4] = 15'b000000010000000;
-		a[5] = 15'b000000010000000;
-		a[6] = 15'b000000010000000;
-		a[7] = 15'b000000010000000;
-		a[8] = 15'b000000010000000;
-		a[9] = 15'b000000010000000;
-		a[10] = 15'b000000010000000;
-		a[11] = 15'b000000010000000;
-		a[12] = 15'b000000010000000;
-		a[13] = 15'b000000010000000;
-		a[14] = 15'b000000011111000;
-		a[15] = 15'b000000000001000;
-		a[16] = 15'b000000000001000;
-		a[17] = 15'b000000000001000;
-		a[18] = 15'b000000000001000;
-		a[19] = 15'b000000000001111;
-		
-	end
-	
-	
+	reg[19:0] imageRom[0:14];
+	initial
+		$readmemb("TinyFPGAROM20x15.txt", imageRom);
 	
 	reg reset = 0;  // for PLL
 	
+	reg inDisplayArea;
+	wire counterXMax = (counter_x == 10'd799);
+	wire counterYMax = (counter_y == 10'd524);
 	wire clk25MHz;
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -77,7 +54,17 @@ module VGAController(
 						counter_y <= 0;              
 				end  // if (counter_x...
 		end  // always
-	// end counter and sync generation  
+		
+		
+		always @(posedge clk25MHz) begin
+			
+			if(inDisplayArea == 0) 
+				inDisplayArea <= (counterXMax) && (counter_y < 480);
+			else
+				inDisplayArea <= !(counter_x == 639);
+		
+			
+		end
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// hsync and vsync output assignments
@@ -87,32 +74,26 @@ module VGAController(
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// pattern generate
-		always @ (posedge clk)
-		begin
 		
-		if(450 <= counter_x && counter_x <= 482)
+		reg[19:0] line;
+	
+		always @(counter_y)
 		begin
-			r_red <= 4'hF;    // white
-			r_blue <= 4'h0;
-			r_green <= 4'hF;
+			line=imageRom[counter_y >> 5];
 		end
-		else
-		begin
-			r_red <= 4'hF;    // white
-			r_blue <= 4'hF;
-			r_green <= 4'hF;
-		end
-			
-		end  // always
 						
 	// end pattern generate
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// color output assignments
 	// only output the colors if the counters are within the adressable video time constraints
-	assign o_red = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) ? r_red : 4'h0;
-	assign o_blue = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) ? r_blue : 4'h0;
-	assign o_green = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) ? r_green : 4'h0;
+	assign o_red = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) & ~line[counter_x >> 5];
+	assign o_blue = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) & ~line[counter_x >> 5];
+	assign o_green = (counter_x > 144 && counter_x <= 783 && counter_y > 35 && counter_y <= 514) & ~line[counter_x >> 5];
+
+	
+	
+	
 	// end color output assignments
 	
 endmodule  // VGA_image_gen

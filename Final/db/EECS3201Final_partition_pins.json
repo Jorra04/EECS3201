@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "g[1]",
+					"strict" : false
+				},
+				{
 					"name" : "g[2]",
 					"strict" : false
 				},
