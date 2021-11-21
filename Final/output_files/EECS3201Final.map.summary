@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Nov 20 21:39:34 2021
+Analysis & Synthesis Status : Successful - Sun Nov 21 16:16:16 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 Revision Name : EECS3201Final
 Top-level Entity Name : EECS3201Final
 Family : MAX 10
-Total logic elements : 2,423
-    Total combinational functions : 2,352
-    Dedicated logic registers : 267
-Total registers : 267
+Total logic elements : 3,125
+    Total combinational functions : 3,054
+    Dedicated logic registers : 299
+Total registers : 299
 Total pins : 49
 Total virtual pins : 0
 Total memory bits : 0

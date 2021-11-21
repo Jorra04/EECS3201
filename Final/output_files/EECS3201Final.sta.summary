@@ -3,51 +3,51 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -6.139
-TNS   : -8.533
+Slack : -6.829
+TNS   : -7.542
 
 Type  : Slow 1200mV 85C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -5.078
-TNS   : -221.273
+Slack : -5.754
+TNS   : -240.744
 
 Type  : Slow 1200mV 85C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -3.020
-TNS   : -51.894
+Slack : -3.364
+TNS   : -57.215
 
 Type  : Slow 1200mV 85C Model Setup 'clkin'
-Slack : -1.295
-TNS   : -50.876
+Slack : -1.501
+TNS   : -55.818
 
 Type  : Slow 1200mV 85C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 0.324
+Slack : 0.315
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clkin'
-Slack : 0.329
+Slack : 0.330
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.405
+Slack : 0.412
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 0.421
+Slack : 0.432
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -2.551
-TNS   : -33.163
+Slack : -3.452
+TNS   : -44.876
 
 Type  : Slow 1200mV 85C Model Recovery 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 17.868
+Slack : 15.705
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 2.825
+Slack : 3.681
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 21.805
+Slack : 23.911
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pause'
@@ -59,63 +59,63 @@ Slack : -1.403
 TNS   : -65.941
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkin'
-Slack : 9.623
+Slack : 9.624
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.719
+Slack : 19.720
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 499.743
+Slack : 499.740
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -5.658
-TNS   : -7.023
+Slack : -6.140
+TNS   : -6.353
 
 Type  : Slow 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -4.445
-TNS   : -192.812
+Slack : -5.047
+TNS   : -211.018
 
 Type  : Slow 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -2.484
-TNS   : -42.402
+Slack : -2.789
+TNS   : -47.092
 
 Type  : Slow 1200mV 0C Model Setup 'clkin'
-Slack : -1.226
-TNS   : -47.839
+Slack : -1.404
+TNS   : -52.246
 
 Type  : Slow 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -0.004
-TNS   : -0.004
+Slack : -0.011
+TNS   : -0.011
 
 Type  : Slow 1200mV 0C Model Hold 'clkin'
 Slack : 0.295
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.326
+Slack : 0.333
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 0.385
+Slack : 0.395
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -2.660
-TNS   : -34.580
+Slack : -3.451
+TNS   : -44.863
 
 Type  : Slow 1200mV 0C Model Recovery 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 18.007
+Slack : 15.943
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 2.724
+Slack : 3.524
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 21.654
+Slack : 23.482
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pause'
@@ -127,11 +127,11 @@ Slack : -1.403
 TNS   : -65.941
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkin'
-Slack : 9.652
+Slack : 9.648
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.702
+Slack : 19.700
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
@@ -139,23 +139,23 @@ Slack : 499.721
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -2.455
-TNS   : -2.455
+Slack : -2.860
+TNS   : -2.860
 
 Type  : Fast 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.293
-TNS   : -101.653
+Slack : -2.651
+TNS   : -111.720
 
 Type  : Fast 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : -1.206
-TNS   : -20.496
+Slack : -1.396
+TNS   : -23.532
 
 Type  : Fast 1200mV 0C Model Setup 'clkin'
-Slack : -0.542
-TNS   : -21.496
+Slack : -0.653
+TNS   : -24.242
 
 Type  : Fast 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 0.092
+Slack : 0.088
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clkin'
@@ -163,47 +163,47 @@ Slack : 0.144
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 0.161
+Slack : 0.160
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.203
+Slack : 0.206
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : -0.837
-TNS   : -10.881
+Slack : -1.431
+TNS   : -18.603
 
 Type  : Fast 1200mV 0C Model Recovery 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 19.078
+Slack : 17.990
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
-Slack : 1.139
+Slack : 1.582
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 20.753
+Slack : 21.701
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pause'
 Slack : -3.000
-TNS   : -4.307
+TNS   : -4.319
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout'
 Slack : -1.000
 TNS   : -47.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkin'
-Slack : 9.302
+Slack : 9.303
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 19.770
+Slack : 19.769
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[1]'
-Slack : 499.744
+Slack : 499.751
 TNS   : 0.000
 
 ------------------------------------------------------------
