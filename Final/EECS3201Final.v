@@ -165,35 +165,96 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 					integer i;
 					integer CLOUD_OFFSET_y_count = 1;
 					if((0 <= y && y < 350)) begin
-						r <= 4'b1000;
-						g <= 4'b1010;
-						b <= 4'b1110;
-						
-						
-						for(i = 0; i < 15; i = i + 1) begin
-						
-							if((CLOUD_START_y - i*CLOUD_OFFSET_y <= y && y <= CLOUD_END_y + i*CLOUD_OFFSET_y) 
-								&& (CLOUD_START_x  + cloudMovement + i*CLOUD_OFFSET_x <= x && x < CLOUD_END_x +cloudMovement - i*CLOUD_OFFSET_x)) begin
-							
+						//Drawing cloud 1.
+						if((115 <= y && y <= 120) && (35 +cloudMovement  <= x && x <= 200 +cloudMovement )) begin
+							r <= 4'b1101;
+							g <= 4'b1101;
+							b <= 4'b1101;
+						end else if((110 <= y && y <= 115) && (40+cloudMovement  <= x && x <= 195+cloudMovement  )) begin
+							if( 50 +cloudMovement <= x ) begin
+								r <= 4'b1101;
+								g <= 4'b1101;
+								b <= 4'b1101;
+							end else begin
 								r <= 4'b1111;
 								g <= 4'b1111;
 								b <= 4'b1111;
-	
 							end
-						end
-						
-						
-						for(i = 0; i < 15; i = i + 1) begin
-						
-							if((CLOUD2_START_y - i*CLOUD_OFFSET_y <= y && y <= CLOUD2_END_y + i*CLOUD_OFFSET_y) 
-								&& (CLOUD2_START_x  + cloudMovement2 + i*CLOUD_OFFSET_x <= x && x < CLOUD2_END_x + cloudMovement2 - i*CLOUD_OFFSET_x)) begin
 							
+						end else if((100 <= y && y <= 110) && (45 +cloudMovement  <= x && x <= 155 +cloudMovement  )) begin
+							if((105 <= y && y <= 110) && (50 +cloudMovement  <= x && x <= 150 +cloudMovement  )) begin
+								r <= 4'b1110;
+								g <= 4'b1110;
+								b <= 4'b1110;
+							end else if((100 <= y && y <= 105) && (80 +cloudMovement  <= x && x <= 120 +cloudMovement  ) ) begin
+								r <= 4'b1110;
+								g <= 4'b1110;
+								b <= 4'b1110;
+							end else begin
 								r <= 4'b1111;
 								g <= 4'b1111;
 								b <= 4'b1111;
-	
 							end
+							
+						end else if((95 <= y && y <= 100) && (55 +cloudMovement  <= x && x <= 65 +cloudMovement  )) begin
+							r <= 4'b1111;
+							g <= 4'b1111;
+							b <= 4'b1111;
+						end else if((80 <= y && y <= 100) && (75 +cloudMovement  <= x && x <= 125 +cloudMovement  )) begin
+							if((85 <= y && y <= 100) && (80 +cloudMovement  <= x && x <= 115 +cloudMovement )) begin
+								r <= 4'b1110;
+								g <= 4'b1110;
+								b <= 4'b1110;
+							end else if((80 <= y && y <= 100) && (78 +cloudMovement  <= x && x <= 112 +cloudMovement  )) begin
+								r <= 4'b1110;
+								g <= 4'b1110;
+								b <= 4'b1110;
+							end else begin
+								r <= 4'b1111;
+								g <= 4'b1111;
+								b <= 4'b1111;
+							end
+							
+						end else if((70 <= y && y <= 80) && (85 +cloudMovement  <= x && x <= 115 +cloudMovement  )) begin
+							if((75 <= y && y<= 80) && (96 +cloudMovement  <= x && x <= 104 +cloudMovement )) begin
+								r <= 4'b1110;
+								g <= 4'b1110;
+								b <= 4'b1110;
+							end else begin
+								r <= 4'b1111;
+								g <= 4'b1111;
+								b <= 4'b1111;
+							end
+							
+						end else if((60 <= y && y <= 70) && (90 +cloudMovement  <= x && x <= 110 +cloudMovement )) begin
+							r <= 4'b1111;
+							g <= 4'b1111;
+							b <= 4'b1111;
+						end else if((90 <= y && y <= 100) && (130 +cloudMovement  <= x && x <= 150 +cloudMovement  )) begin
+							r <= 4'b1111;
+							g <= 4'b1111;
+							b <= 4'b1111;
+						end else if((100 <= y && y <= 110) && (165 +cloudMovement  <= x && x <= 190 +cloudMovement  )) begin
+							if((103 <= y && y <= 110) && (170 +cloudMovement  <= x && x <= 185 +cloudMovement  )) begin
+								r <= 4'b1101;
+								g <= 4'b1101;
+								b <= 4'b1101;
+							end else begin
+								r <= 4'b1111;
+								g <= 4'b1111;
+								b <= 4'b1111;
+							end
+							
+						end else begin
+							r <= 4'b1000;
+							g <= 4'b1010;
+							b <= 4'b1110;
 						end
+					
+						
+					
+						
+						
 	
 					//Drawing the letters of "Press key1 to begin".
 						
