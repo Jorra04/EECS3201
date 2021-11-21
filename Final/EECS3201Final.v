@@ -195,19 +195,361 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 							end
 						end
 	
-
+					//Drawing the letters of "Press key1 to begin".
 						
 					end else begin
-						if((360 <= y && y <= 375) && (255 <= x && x <= 455)) begin
+						if((360 <= y && y <= 375) && (255 <= x && x <= 555)) begin
 							//Drawing the P
-							if((360 <= y && y <= 375) && (255 <= x && x <= 257)) begin
+							if((362 <= y && y <= 375) && (255 <= x && x <= 257)) begin
 								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
 								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
 								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
-							end else if((360 <= y && y <= 362) && (255 <= x && x <= 265)) begin 
+							end else if((360 <= y && y <= 362) && (257 <= x && x <= 263)) begin 
 								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
 								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
 								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((365 <= y && y <= 367) && (257 <= x && x <= 263)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((362 <= y && y <= 364) && (263 <= x && x <= 265)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								//End of P.
+								//Start of r.
+								
+							end else if((362 <= y && y <= 375) && (270 <= x && x <= 272)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (270 <= x && x <= 277)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((366 <= y && y <= 368) && (275 <= x && x <= 277)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								//End of r.
+								//Start of e.
+								
+							end else if((368 <= y && y <= 370) && (280 <= x && x <= 287)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((366 <= y && y <= 368) && ((280 <= x && x <= 282) || (285 <= x && x <= 287))) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (282 <= x && x <= 285)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (282 <= x && x <= 285)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 373) && (280 <= x && x <= 282)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (282 <= x && x <= 286)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+								//End of e.
+								//start of s.
+								
+							end else if((364 <= y && y <= 366) && (292 <= x && x <= 300)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((367 <= y && y <= 369) && (290 <= x && x <= 292)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((369 <= y && y <= 371) && (292 <= x && x <= 298)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((371 <= y && y <= 373) && (298 <= x && x <= 300)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (290 <= x && x <= 298)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								//End of s.
+								//Start of s
+							end else if((364 <= y && y <= 366) && (304 <= x && x <= 312)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((367 <= y && y <= 369) && (302 <= x && x <= 304)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((369 <= y && y <= 371) && (304 <= x && x <= 310)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((371 <= y && y <= 373) && (310 <= x && x <= 312)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (302 <= x && x <= 310)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								//End of s.
+								//Start of K.
+							end else if((362 <= y && y <= 375) && (330 <= x && x <= 332)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((368 <= y && y <= 370) && (330 <= x && x <= 335)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((366 <= y && y <= 368) && (334 <= x && x <= 336)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((362 <= y && y <= 368) && (336 <= x && x <= 338)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 372) && (334 <= x && x <= 336)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 375) && (336 <= x && x <= 338)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								//End of K.
+								//Start of e.
+							end else if((368 <= y && y <= 370) && (341 <= x && x <= 348)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((366 <= y && y <= 368) && ((341 <= x && x <= 343) || (346 <= x && x <= 348))) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (343 <= x && x <= 346)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (343 <= x && x <= 346)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 373) && (341 <= x && x <= 343)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (343 <= x && x <= 347)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+								//End of e.
+								//Start of y.
+								
+							end else if((363 <= y && y <= 367) && (351 <= x && x <= 353)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((367 <= y && y <= 369) && (352 <= x && x <= 360)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((363 <= y && y <= 371) && (358 <= x && x <= 360)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((371 <= y && y <= 373) && (357 <= x && x <= 359)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (352 <= x && x <= 356)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+								//End of y.
+								//Start of 1.
+								
+							end else if((373 <= y && y <= 375) && (363 <= x && x <= 371)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+							end else if((362 <= y && y <= 375) && (366 <= x && x <= 368)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+							end else if((364 <= y && y <= 366) && (364 <= x && x <= 368)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+								//End of 1.
+								//Start of T.
+
+							end else if((362 <= y && y <= 364) && (389 <= x && x <= 399)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+							end else if((362 <= y && y <= 375) && (393 <= x && x <= 395)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+								//End of T.
+								//Start of o.
+								
+							end else if((364 <= y && y <= 366) && (403 <= x && x <= 409)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+							end else if((373 <= y && y <= 375) && (403 <= x && x <= 409)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+							end else if((366 <= y && y <= 373) && (402 <= x && x <= 404)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+
+							end else if((366 <= y && y <= 373) && (408 <= x && x <= 410)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+								//End of o.
+								//Start of B.
+
+							end else if((362 <= y && y <= 375) && (428 <= x && x <= 430)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((362 <= y && y <= 364) && (428 <= x && x <= 434)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (428 <= x && x <= 434)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((367 <= y && y <= 369) && (428 <= x && x <= 434)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (434 <= x && x <= 436)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 372) && (434 <= x && x <= 436)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							
+								//End of B.
+								//Start of e.
+							
+							end else if((368 <= y && y <= 370) && (439 <= x && x <= 446)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((366 <= y && y <= 368) && ((439 <= x && x <= 441) || (444 <= x && x <= 446))) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (441 <= x && x <= 444)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (441 <= x && x <= 444)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((370 <= y && y <= 373) && (439 <= x && x <= 441)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (441 <= x && x <= 445)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+								//End of e.
+								//Start of g.
+							
+							end else if((363 <= y && y <= 365) && (449 <= x && x <= 457)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end 
+							else if((365 <= y && y <= 367) && (448 <= x && x <= 450)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((368 <= y && y <= 369) && (449 <= x && x <= 457)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((363 <= y && y <= 371) && (455 <= x && x <= 457)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((371 <= y && y <= 373) && (454 <= x && x <= 456)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((373 <= y && y <= 375) && (449 <= x && x <= 453)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;	
+							
+							//End of g.
+							//Start of i.
+							end else if((364 <= y && y <= 366) && (460 <= x && x <= 462)) begin 
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;	
+							
+							end else if((368 <= y && y <= 375) && (460 <= x && x <= 462)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+							//End of i.
+							//Start of n.
+								
+								
+							end else if ((364 <= y && y <= 375) && (464 <= x && x <= 466)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+							end else if((364 <= y && y <= 366) && (464 <= x && x <= 470)) begin
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
+							end else if((366  <= y && y <= 375) && (471 <= x && x <= 473)) begin	
+								r <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								g <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								b <= alternateTitleColour ? 4'b1111 : 4'b0000;
+								
 							end else begin
 								r <= 4'b0111;
 								g <= 4'b1110;
@@ -515,8 +857,8 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 						end
 						
 						
-						cloudMovement <= cloudMovement +  (5*movement);
-						cloudMovement2 <= cloudMovement2 + (5*movement2);
+						cloudMovement <= cloudMovement +  (1*movement);
+						cloudMovement2 <= cloudMovement2 + (1*movement2);
 					
 						
 					end if(counter == 60)begin
