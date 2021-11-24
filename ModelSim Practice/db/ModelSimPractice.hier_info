@@ -1,0 +1,26 @@
+|full_adderV
+fsum << half_adderV:HA2.sum
+fcarry_out << or1.DB_MAX_OUTPUT_PORT_TYPE
+a => a.IN1
+b => b.IN1
+c => c.IN1
+
+
+|full_adderV|half_adderV:HA1
+sum <= sum1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry1.DB_MAX_OUTPUT_PORT_TYPE
+a => sum1.IN0
+a => carry1.IN0
+b => sum1.IN1
+b => carry1.IN1
+
+
+|full_adderV|half_adderV:HA2
+sum <= sum1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry1.DB_MAX_OUTPUT_PORT_TYPE
+a => sum1.IN0
+a => carry1.IN0
+b => sum1.IN1
+b => carry1.IN1
+
+

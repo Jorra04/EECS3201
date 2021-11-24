@@ -1,0 +1,86 @@
+# Reading pref.tcl
+# do ModelSimPractice_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Jorra/Documents/Coding\ Practice/School/EECS3201/ModelSim\ Practice {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/half_adderV.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:20:09 on Nov 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice" C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/half_adderV.v 
+# -- Compiling module half_adderV
+# 
+# Top level modules:
+# 	half_adderV
+# End time: 14:20:09 on Nov 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Jorra/Documents/Coding\ Practice/School/EECS3201/ModelSim\ Practice {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:20:09 on Nov 24,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice" C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV.v 
+# -- Compiling module full_adderV
+# 
+# Top level modules:
+# 	full_adderV
+# End time: 14:20:09 on Nov 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:22:21 on Nov 24,2021
+# vlog -reportprogress 300 -work work C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV_tb.v 
+# -- Compiling module full_adderV_tb
+# 
+# Top level modules:
+# 	full_adderV_tb
+# End time: 14:22:21 on Nov 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.full_adderV_tb
+# vsim -gui -l msim_transcript work.full_adderV_tb 
+# Start time: 14:23:18 on Nov 24,2021
+# Loading work.full_adderV_tb
+# Loading work.full_adderV
+# Loading work.half_adderV
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/a
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/b
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/c
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/fsum
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/fcarry_out
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/half_sum_1
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/half_carry_1
+add wave -position insertpoint  \
+sim:/full_adderV_tb/my_full_adder/half_carry_2
+run -all
+#                    0  --->  0 0 0 0 0
+#                    5  --->  0 0 1 0 1
+#                   10  --->  0 1 0 0 1
+#                   15  --->  0 1 1 1 0
+#                   20  --->  1 0 0 0 1
+#                   25  --->  1 0 1 1 0
+#                   30  --->  1 1 0 1 0
+#                   35  --->  1 1 1 1 1
+# ** Note: $stop    : C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV_tb.v(54)
+#    Time: 45 ns  Iteration: 0  Instance: /full_adderV_tb
+# Break in Module full_adderV_tb at C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/ModelSim Practice/full_adderV_tb.v line 54
+run
+run -all
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 14:34:55 on Nov 24,2021, Elapsed time: 0:11:37
+# Errors: 0, Warnings: 0

@@ -1,0 +1,15 @@
+|test2
+clk => r[0]~reg0.CLK
+clk => r[1]~reg0.CLK
+clk => r[2]~reg0.CLK
+clk => r[3]~reg0.CLK
+a => r.OUTPUTSELECT
+a => r.OUTPUTSELECT
+a => r.OUTPUTSELECT
+a => r.OUTPUTSELECT
+r[0] << r[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+r[1] << r[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+r[2] << r[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+r[3] << r[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
