@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/simulation/modelsim
 vtest2
-!s110 1637790097
+!s110 1637800457
 !i10b 1
 !s100 YO<7PQR1Z[eW?K0M3@Q<>2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1637790097.000000
+!s108 1637800457.000000
 !s107 C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5|C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2.v|
 !i113 1
@@ -34,23 +34,23 @@ o-vlog01compat -work work
 !s92 -vlog01compat -work work {+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5}
 Z4 tCvgOpt 0
 vtest2_tb
-!s110 1637790132
+!s110 1637800536
 !i10b 1
-!s100 ZmCTPX^0>nGD]GP@WBlFb0
+!s100 B4dg<cXjf7AMcbY?Y;[bB2
 R1
-IBkg9YOe_>I3nXZJnmiDNZ0
+IO:c9:hKJ4HBh:Lj;ISkUN0
 R2
 R0
-w1637789986
+w1637799886
 8C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v
 FC:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v
 !i122 1
-L0 3 49
+L0 3 44
 R3
 r1
 !s85 0
 31
-!s108 1637790132.000000
+!s108 1637800536.000000
 !s107 C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v|
 !i113 1

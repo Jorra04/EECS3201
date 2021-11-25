@@ -12,40 +12,39 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Jorra/Documents/Coding\ Practice/School/EECS3201/Lab\ 5 {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:41:37 on Nov 24,2021
+# Start time: 19:34:17 on Nov 24,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5" C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2.v 
 # -- Compiling module test2
 # 
 # Top level modules:
 # 	test2
-# End time: 16:41:37 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:34:17 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:42:12 on Nov 24,2021
+# Start time: 19:35:36 on Nov 24,2021
 # vlog -reportprogress 300 -work work C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v 
 # -- Compiling module test2_tb
 # 
 # Top level modules:
 # 	test2_tb
-# End time: 16:42:12 on Nov 24,2021, Elapsed time: 0:00:00
+# End time: 19:35:36 on Nov 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim -gui -l msim_transcript work.test2_tb
 # vsim -gui -l msim_transcript work.test2_tb 
-# Start time: 16:42:30 on Nov 24,2021
+# Start time: 19:35:52 on Nov 24,2021
 # Loading work.test2_tb
 # Loading work.test2
+add wave -position insertpoint  \
+sim:/test2_tb/r
 add wave -position insertpoint  \
 sim:/test2_tb/clk
 add wave -position insertpoint  \
 sim:/test2_tb/a
-add wave -position insertpoint  \
-sim:/test2_tb/r
 run -all
-# All outputs are zero
-# ** Note: $stop    : C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v(44)
+# ** Note: $stop    : C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v(40)
 #    Time: 300 ns  Iteration: 0  Instance: /test2_tb
-# Break in Module test2_tb at C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v line 44
-# End time: 16:43:54 on Nov 24,2021, Elapsed time: 0:01:24
+# Break in Module test2_tb at C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Lab 5/test2_tb.v line 40
+# End time: 19:38:04 on Nov 24,2021, Elapsed time: 0:02:12
 # Errors: 0, Warnings: 0
