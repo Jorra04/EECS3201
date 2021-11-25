@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab5
-Wed Nov 24 19:30:42 2021
+Thu Nov 25 12:40:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                   ;
 +------------------------------------+-----------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 24 19:30:42 2021                     ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 25 12:40:14 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; Lab5                                                      ;
 ; Top-level Entity Name              ; test2                                                     ;
@@ -270,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Wed Nov 24 19:30:36 2021
+    Info: Processing started: Thu Nov 25 12:40:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -292,7 +292,7 @@ Info (21057): Implemented 13 device resources after synthesis - the final resour
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Wed Nov 24 19:30:42 2021
+    Info: Processing ended: Thu Nov 25 12:40:14 2021
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 

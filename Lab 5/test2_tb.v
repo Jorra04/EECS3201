@@ -4,7 +4,7 @@ module test2_tb;
 
 	reg clk,a;
 	wire[3:0] r;
-	reg allFalse = 1'b1;
+	
 	test2 test2_test(
 		.clk(clk),
 		.a(a),
@@ -12,12 +12,20 @@ module test2_tb;
 	);
 	
 	
+	always@(r) begin
+		
+		if(r == 0)
+			$display("All outputs are zero");
+			
+	end
+	
+	
 	
 	always begin
-		clk = 1'b1;
+		clk = 1'b0;
 		#10;
 		
-		clk = 1'b0;
+		clk = 1'b1;
 		#10;
 	end
 	
@@ -25,17 +33,13 @@ module test2_tb;
 	
 		a = 0;
 		#100;
-		allFalse = allFalse && (r==0);
 		
 		a = 1;
 		#200;
-		allFalse = allFalse && (r==0);
 		
 		a = 0;
-		allFalse = allFalse && (r == 0);
+		#300;
 		
-		if(allFalse)
-			$display("All outputs are zero");
 			
 		$stop;
 		
