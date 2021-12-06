@@ -1,5 +1,5 @@
 Timing Analyzer report for EECS3201Final
-Sun Nov 21 16:16:42 2021
+Mon Dec 06 17:23:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -94,14 +94,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 2.55        ;
+; Average used               ; 2.57        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  14.7%      ;
-;     Processor 3            ;  14.2%      ;
-;     Processors 4-12        ;  14.1%      ;
+;     Processor 2            ;  14.6%      ;
+;     Processors 3-12        ;  14.3%      ;
 +----------------------------+-------------+
 
 
@@ -123,10 +122,10 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+--------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                             ; Note ;
 +------------+-----------------+--------------------------------------------------------+------+
-; 61.22 MHz  ; 61.22 MHz       ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ;      ;
-; 127.73 MHz ; 127.73 MHz      ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ;      ;
-; 162.68 MHz ; 162.68 MHz      ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ;      ;
-; 168.95 MHz ; 168.95 MHz      ; clkin                                                  ;      ;
+; 59.11 MHz  ; 59.11 MHz       ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ;      ;
+; 137.34 MHz ; 137.34 MHz      ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ;      ;
+; 172.32 MHz ; 172.32 MHz      ; clkin                                                  ;      ;
+; 278.4 MHz  ; 278.4 MHz       ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ;      ;
 +------------+-----------------+--------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -136,10 +135,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -6.829 ; -7.542        ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -5.754 ; -240.744      ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -3.364 ; -57.215       ;
-; clkin                                                  ; -1.501 ; -55.818       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -5.020 ; -261.581      ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -3.013 ; -51.784       ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -2.932 ; -5.847        ;
+; clkin                                                  ; -1.490 ; -63.842       ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -148,10 +147,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+-------+---------------+
 ; Clock                                                  ; Slack ; End Point TNS ;
 +--------------------------------------------------------+-------+---------------+
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0.315 ; 0.000         ;
-; clkin                                                  ; 0.330 ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0.412 ; 0.000         ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.432 ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0.324 ; 0.000         ;
+; clkin                                                  ; 0.347 ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0.413 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.423 ; 0.000         ;
 +--------------------------------------------------------+-------+---------------+
 
 
@@ -160,8 +159,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -3.452 ; -44.876       ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 15.705 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -2.601 ; -33.669       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 15.545 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -170,8 +169,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 3.681  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 23.911 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 2.797  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 23.965 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -182,9 +181,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+---------+---------------+
 ; pause                                                  ; -3.000  ; -4.403        ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -1.403  ; -65.941       ;
-; clkin                                                  ; 9.624   ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.720  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.740 ; 0.000         ;
+; clkin                                                  ; 9.637   ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.718  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.743 ; 0.000         ;
 +--------------------------------------------------------+---------+---------------+
 
 
@@ -200,10 +199,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+--------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                             ; Note ;
 +------------+-----------------+--------------------------------------------------------+------+
-; 66.09 MHz  ; 66.09 MHz       ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ;      ;
-; 140.06 MHz ; 140.06 MHz      ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ;      ;
-; 175.16 MHz ; 175.16 MHz      ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ;      ;
-; 185.84 MHz ; 185.84 MHz      ; clkin                                                  ;      ;
+; 63.18 MHz  ; 63.18 MHz       ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ;      ;
+; 147.95 MHz ; 147.95 MHz      ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ;      ;
+; 185.15 MHz ; 185.15 MHz      ; clkin                                                  ;      ;
+; 304.32 MHz ; 304.32 MHz      ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ;      ;
 +------------+-----------------+--------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -213,10 +212,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -6.140 ; -6.353        ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -5.047 ; -211.018      ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -2.789 ; -47.092       ;
-; clkin                                                  ; -1.404 ; -52.246       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -4.356 ; -226.704      ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -3.034 ; -4.648        ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -2.474 ; -42.232       ;
+; clkin                                                  ; -1.359 ; -58.193       ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -225,10 +224,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -0.011 ; -0.011        ;
-; clkin                                                  ; 0.295  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -0.004 ; -0.004        ;
+; clkin                                                  ; 0.311  ; 0.000         ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0.333  ; 0.000         ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.395  ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.391  ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -237,8 +236,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -3.451 ; -44.863       ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 15.943 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -2.598 ; -33.690       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 15.784 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -247,8 +246,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 3.524  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 23.482 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 2.774  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 23.536 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -259,9 +258,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------+---------+---------------+
 ; pause                                                  ; -3.000  ; -4.403        ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -1.403  ; -65.941       ;
-; clkin                                                  ; 9.648   ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.700  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.721 ; 0.000         ;
+; clkin                                                  ; 9.649   ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.692  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.710 ; 0.000         ;
 +--------------------------------------------------------+---------+---------------+
 
 
@@ -277,10 +276,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -2.860 ; -2.860        ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -2.651 ; -111.720      ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -1.396 ; -23.532       ;
-; clkin                                                  ; -0.653 ; -24.242       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -2.296 ; -120.184      ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -1.204 ; -20.454       ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -0.911 ; -0.911        ;
+; clkin                                                  ; -0.653 ; -27.249       ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -289,9 +288,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------+-------+---------------+
 ; Clock                                                  ; Slack ; End Point TNS ;
 +--------------------------------------------------------+-------+---------------+
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0.088 ; 0.000         ;
-; clkin                                                  ; 0.144 ; 0.000         ;
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.160 ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0.092 ; 0.000         ;
+; clkin                                                  ; 0.152 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 0.158 ; 0.000         ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0.206 ; 0.000         ;
 +--------------------------------------------------------+-------+---------------+
 
@@ -301,8 +300,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -1.431 ; -18.603       ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 17.990 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -0.917 ; -11.873       ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 17.968 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -311,8 +310,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------+--------+---------------+
 ; Clock                                                  ; Slack  ; End Point TNS ;
 +--------------------------------------------------------+--------+---------------+
-; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 1.582  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 21.701 ; 0.000         ;
+; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; 1.167  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 21.716 ; 0.000         ;
 +--------------------------------------------------------+--------+---------------+
 
 
@@ -321,11 +320,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------+---------+---------------+
 ; Clock                                                  ; Slack   ; End Point TNS ;
 +--------------------------------------------------------+---------+---------------+
-; pause                                                  ; -3.000  ; -4.319        ;
+; pause                                                  ; -3.000  ; -4.287        ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -1.000  ; -47.000       ;
-; clkin                                                  ; 9.303   ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.769  ; 0.000         ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.751 ; 0.000         ;
+; clkin                                                  ; 9.329   ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 19.761  ; 0.000         ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 499.739 ; 0.000         ;
 +--------------------------------------------------------+---------+---------------+
 
 
@@ -341,18 +340,18 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +---------------------------------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                                                   ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                        ; -6.829   ; -0.011 ; -3.452   ; 1.582   ; -3.000              ;
-;  ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -6.829   ; 0.160  ; -3.452   ; 1.582   ; -1.403              ;
-;  clkin                                                  ; -1.501   ; 0.144  ; N/A      ; N/A     ; 9.303               ;
+; Worst-case Slack                                        ; -5.020   ; -0.004 ; -2.601   ; 1.167   ; -3.000              ;
+;  ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -3.034   ; 0.158  ; -2.601   ; 1.167   ; -1.403              ;
+;  clkin                                                  ; -1.490   ; 0.152  ; N/A      ; N/A     ; 9.329               ;
 ;  pause                                                  ; N/A      ; N/A    ; N/A      ; N/A     ; -3.000              ;
-;  pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -5.754   ; 0.206  ; N/A      ; N/A     ; 19.700              ;
-;  pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -3.364   ; -0.011 ; 15.705   ; 21.701  ; 499.721             ;
-; Design-wide TNS                                         ; -361.319 ; -0.011 ; -44.876  ; 0.0     ; -70.344             ;
-;  ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -7.542   ; 0.000  ; -44.876  ; 0.000   ; -65.941             ;
-;  clkin                                                  ; -55.818  ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -5.020   ; 0.206  ; N/A      ; N/A     ; 19.692              ;
+;  pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -3.013   ; -0.004 ; 15.545   ; 21.716  ; 499.710             ;
+; Design-wide TNS                                         ; -383.054 ; -0.004 ; -33.69   ; 0.0     ; -70.344             ;
+;  ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; -5.847   ; 0.000  ; -33.690  ; 0.000   ; -65.941             ;
+;  clkin                                                  ; -63.842  ; 0.000  ; N/A      ; N/A     ; 0.000               ;
 ;  pause                                                  ; N/A      ; N/A    ; N/A      ; N/A     ; -4.403              ;
-;  pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -240.744 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
-;  pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -57.215  ; -0.011 ; 0.000    ; 0.000   ; 0.000               ;
+;  pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; -261.581 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; -51.784  ; -0.004 ; 0.000    ; 0.000   ; 0.000               ;
 +---------------------------------------------------------+----------+--------+----------+---------+---------------------+
 
 
@@ -601,8 +600,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 ; clkin                                                  ; clkin                                                  ; 2435     ; 0        ; 0        ; 0        ;
 ; pause                                                  ; clkin                                                  ; 0        ; 48       ; 0        ; 0        ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; clkin                                                  ; 48       ; 0        ; 0        ; 0        ;
-; pause                                                  ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 67       ; 0        ; 0        ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 1303871  ; 0        ; 0        ; 0        ;
+; pause                                                  ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 75       ; 0        ; 0        ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 1331612  ; 0        ; 0        ; 0        ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 4398     ; 0        ; 0        ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 1        ; 1        ; 0        ; 18       ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0        ; 0        ; 26       ; 0        ;
@@ -621,8 +620,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; clkin                                                  ; clkin                                                  ; 2435     ; 0        ; 0        ; 0        ;
 ; pause                                                  ; clkin                                                  ; 0        ; 48       ; 0        ; 0        ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; clkin                                                  ; 48       ; 0        ; 0        ; 0        ;
-; pause                                                  ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 67       ; 0        ; 0        ;
-; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 1303871  ; 0        ; 0        ; 0        ;
+; pause                                                  ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 75       ; 0        ; 0        ;
+; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 1331612  ; 0        ; 0        ; 0        ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; 0        ; 4398     ; 0        ; 0        ;
 ; ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 1        ; 1        ; 0        ; 18       ;
 ; pll_inst|altpll_component|auto_generated|pll1|clk[0]   ; pll_inst|altpll_component|auto_generated|pll1|clk[1]   ; 0        ; 0        ; 26       ; 0        ;
@@ -675,7 +674,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 252   ; 252  ;
+; Unconstrained Input Port Paths  ; 253   ; 253  ;
 ; Unconstrained Output Ports      ; 45    ; 45   ;
 ; Unconstrained Output Port Paths ; 147   ; 147  ;
 +---------------------------------+-------+------+
@@ -826,7 +825,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
-    Info: Processing started: Sun Nov 21 16:16:39 2021
+    Info: Processing started: Mon Dec 06 17:23:44 2021
 Info: Command: quartus_sta EECS3201Final -c EECS3201Final
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -849,38 +848,38 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -6.829
+Info (332146): Worst-case setup slack is -5.020
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.829              -7.542 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    -5.754            -240.744 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    -3.364             -57.215 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    -1.501             -55.818 clkin 
-Info (332146): Worst-case hold slack is 0.315
+    Info (332119):    -5.020            -261.581 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    -3.013             -51.784 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -2.932              -5.847 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    -1.490             -63.842 clkin 
+Info (332146): Worst-case hold slack is 0.324
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.315               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.330               0.000 clkin 
-    Info (332119):     0.412               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.432               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-Info (332146): Worst-case recovery slack is -3.452
+    Info (332119):     0.324               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     0.347               0.000 clkin 
+    Info (332119):     0.413               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.423               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+Info (332146): Worst-case recovery slack is -2.601
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.452             -44.876 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    15.705               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-Info (332146): Worst-case removal slack is 3.681
+    Info (332119):    -2.601             -33.669 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    15.545               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case removal slack is 2.797
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.681               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    23.911               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     2.797               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    23.965               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000              -4.403 pause 
     Info (332119):    -1.403             -65.941 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):     9.624               0.000 clkin 
-    Info (332119):    19.720               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):   499.740               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     9.637               0.000 clkin 
+    Info (332119):    19.718               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):   499.743               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1200mV 0C Model
@@ -888,82 +887,82 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -6.140
+Info (332146): Worst-case setup slack is -4.356
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.140              -6.353 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    -5.047            -211.018 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    -2.789             -47.092 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    -1.404             -52.246 clkin 
-Info (332146): Worst-case hold slack is -0.011
+    Info (332119):    -4.356            -226.704 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    -3.034              -4.648 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    -2.474             -42.232 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -1.359             -58.193 clkin 
+Info (332146): Worst-case hold slack is -0.004
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.011              -0.011 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.295               0.000 clkin 
+    Info (332119):    -0.004              -0.004 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     0.311               0.000 clkin 
     Info (332119):     0.333               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):     0.395               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-Info (332146): Worst-case recovery slack is -3.451
+    Info (332119):     0.391               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+Info (332146): Worst-case recovery slack is -2.598
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.451             -44.863 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    15.943               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-Info (332146): Worst-case removal slack is 3.524
+    Info (332119):    -2.598             -33.690 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    15.784               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case removal slack is 2.774
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.524               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    23.482               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     2.774               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    23.536               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000              -4.403 pause 
     Info (332119):    -1.403             -65.941 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):     9.648               0.000 clkin 
-    Info (332119):    19.700               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):   499.721               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     9.649               0.000 clkin 
+    Info (332119):    19.692               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):   499.710               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.860
+Info (332146): Worst-case setup slack is -2.296
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.860              -2.860 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    -2.651            -111.720 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):    -1.396             -23.532 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):    -0.653             -24.242 clkin 
-Info (332146): Worst-case hold slack is 0.088
+    Info (332119):    -2.296            -120.184 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):    -1.204             -20.454 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    -0.911              -0.911 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    -0.653             -27.249 clkin 
+Info (332146): Worst-case hold slack is 0.092
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.088               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-    Info (332119):     0.144               0.000 clkin 
-    Info (332119):     0.160               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):     0.092               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     0.152               0.000 clkin 
+    Info (332119):     0.158               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
     Info (332119):     0.206               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-Info (332146): Worst-case recovery slack is -1.431
+Info (332146): Worst-case recovery slack is -0.917
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.431             -18.603 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    17.990               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
-Info (332146): Worst-case removal slack is 1.582
+    Info (332119):    -0.917             -11.873 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    17.968               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case removal slack is 1.167
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.582               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):    21.701               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     1.167               0.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
+    Info (332119):    21.716               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -4.319 pause 
+    Info (332119):    -3.000              -4.287 pause 
     Info (332119):    -1.000             -47.000 ADXL345Handler:accelerometer|VeryBadSPI:adxl345|clkout 
-    Info (332119):     9.303               0.000 clkin 
-    Info (332119):    19.769               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
-    Info (332119):   499.751               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):     9.329               0.000 clkin 
+    Info (332119):    19.761               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):   499.739               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
 Info (332114): Report Metastability: Found 1 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4945 megabytes
-    Info: Processing ended: Sun Nov 21 16:16:42 2021
+    Info: Processing ended: Mon Dec 06 17:23:47 2021
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:06
 

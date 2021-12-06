@@ -985,7 +985,7 @@ module EECS3201Final(clkin,rst, pause ,MISO,hsync,vsync,r,g,b,MOSI,spiclk,chipse
 						counter <= 0;
 						alternateTitleColour <= ~alternateTitleColour;
 						redTrue <= ~redTrue;
-						targetsize <= targetsize - 1'b1;
+						targetsize <= targetsize - (1'b1 && startGame);
 						rng_counter <= 0;
 					end else begin
 						counter <= counter + 1'b1;
