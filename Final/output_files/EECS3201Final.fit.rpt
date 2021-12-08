@@ -1,5 +1,5 @@
 Fitter report for EECS3201Final
-Mon Dec 06 17:23:39 2021
+Tue Dec 07 21:15:11 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                                 ;
 +------------------------------------+-----------------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Dec 06 17:23:39 2021                     ;
+; Fitter Status                      ; Successful - Tue Dec 07 21:15:11 2021                     ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 Patches 1.02i SJ Lite Edition ;
 ; Revision Name                      ; EECS3201Final                                             ;
 ; Top-level Entity Name              ; EECS3201Final                                             ;
@@ -156,19 +156,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.55        ;
+; Average used               ; 1.53        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.8%      ;
-;     Processor 3            ;   5.4%      ;
-;     Processor 4            ;   5.2%      ;
-;     Processor 5            ;   5.1%      ;
-;     Processor 6            ;   5.0%      ;
-;     Processor 7            ;   5.0%      ;
-;     Processor 8            ;   4.9%      ;
-;     Processors 9-12        ;   4.7%      ;
+;     Processor 2            ;   5.5%      ;
+;     Processor 3            ;   5.2%      ;
+;     Processor 4            ;   5.0%      ;
+;     Processor 5            ;   4.9%      ;
+;     Processor 6            ;   4.8%      ;
+;     Processor 7            ;   4.8%      ;
+;     Processor 8            ;   4.7%      ;
+;     Processors 9-12        ;   4.5%      ;
 +----------------------------+-------------+
 
 
@@ -1750,7 +1750,7 @@ Info (170195): Router estimated average interconnect usage is 1% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 1.35 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.36 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1763,10 +1763,10 @@ Warning (169177): 4 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin MISO uses I/O standard 3.3-V LVTTL at V12 File: C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/EECS3201Final.v Line: 4
 Info (144001): Generated suppressed messages file C:/Users/Jorra/Documents/Coding Practice/School/EECS3201/Final/output_files/EECS3201Final.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6268 megabytes
-    Info: Processing ended: Mon Dec 06 17:23:39 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 6270 megabytes
+    Info: Processing ended: Tue Dec 07 21:15:12 2021
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +----------------------------+
